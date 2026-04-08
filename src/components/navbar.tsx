@@ -4,7 +4,7 @@
 import Logo from "./logo"
 import Link from "next/link"
 import { Button } from "./ui/button"
-import { AlignJustify, X } from "lucide-react"
+import * as LucideIcons from "lucide-react";
 import { AnimatePresence } from 'motion/react'
 import * as motion from "motion/react-m"
 import { useState } from "react"
@@ -61,7 +61,7 @@ export default function Navbar() {
         className="md:hidden cursor-pointer text-black"
         onClick={toggleMenu}
       >
-        {!isOpen ? <AlignJustify size={20} /> : <X size={20} />}
+        {!isOpen ? <LucideIcons.AlignJustify width={20} height={20} /> : <LucideIcons.X width={20} height={20} />}
       </motion.div>
 
       {/* Mobile menu */}
