@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar"
 import SlideEffect from "@/components/slide-effect"
 import TextBlurEffect from "@/components/text-blur-effect"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import * as LucideIcons from "lucide-react";
 import Link from "next/link"
 
 const settings = {
@@ -60,11 +60,11 @@ export default function HomeHero() {
             <Link href={settings.mainCTA.href} className="w-full">
               <Button size='lg' className="capitalize w-full hidden lg:flex">
                 {settings.mainCTA.content}
-                <ArrowRight />
+                <LucideIcons.ArrowRight />
               </Button>
               <Button size='default' className="capitalize w-full flex lg:hidden">
                 {settings.mainCTA.content}
-                <ArrowRight />
+                <LucideIcons.ArrowRight />
               </Button>
             </Link>
             <Link href={settings.secondaryCTA.href} target="_blank" rel="noopener noreferrer" className="w-full">

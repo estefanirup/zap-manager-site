@@ -3,7 +3,7 @@
 import Card from "@/components/card"
 import SlideEffect from "@/components/slide-effect"
 import { Button } from "@/components/ui/button"
-import { CircleCheck } from "lucide-react"
+import * as LucideIcons from "lucide-react";
 import Link from "next/link"
 
 const settings = {
@@ -101,7 +101,7 @@ export default function Pricing() {
               <div className="flex flex-col items-start gap-4 text-sm">
                 {settings.plan_1.features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CircleCheck className="text-primary flex-shrink-0 mt-0.5" size={16} />
+                    <LucideIcons.CheckCircle className="text-primary flex-shrink-0 mt-0.5 w-4 h-4" />
                     <span>{feature}</span>
                   </div>
                 ))}
@@ -129,7 +129,7 @@ export default function Pricing() {
               <div className="flex flex-col items-start gap-4 text-sm">
                 {settings.plan_2.features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CircleCheck className="text-primary flex-shrink-0 mt-0.5" size={16} />
+                    <LucideIcons.CheckCircle className="text-primary flex-shrink-0 mt-0.5 w-4 h-4" />
                     <span>{feature}</span>
                   </div>
                 ))}
@@ -152,7 +152,7 @@ export default function Pricing() {
               <div className="flex flex-col items-start gap-4 text-sm">
                 {settings.plan_3.features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CircleCheck className="text-primary flex-shrink-0 mt-0.5" size={16} />
+                    <LucideIcons.CheckCircle className="text-primary flex-shrink-0 mt-0.5 w-4 h-4" />
                     <span>{feature}</span>
                   </div>
                 ))}

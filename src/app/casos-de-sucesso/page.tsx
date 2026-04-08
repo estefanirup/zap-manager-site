@@ -1,14 +1,11 @@
+'use client';
+
 import Card from "@/components/card"
 import Footer from "@/sections/footer"
 import Navbar from "@/components/navbar"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import * as LucideIcons from "lucide-react";
 import Link from "next/link"
-
-export const metadata = {
-  title: "Casos de Sucesso | Silicon Village",
-  description: "Conheça os projetos que a Silicon Village desenvolveu para empresas como Ultimate Drift, além de soluções internas que transformaram nossa operação.",
-}
 
 const cases = [
   {
@@ -48,7 +45,7 @@ export default function CasosDeSucesso() {
             <p>{item.description}</p>
             <Link href={item.href} className="mt-2">
               <Button variant="link" className="text-primary p-0">
-                Ler case completo <ArrowRight className="w-4 h-4" />
+                Ler case completo <LucideIcons.ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </Card>

@@ -3,7 +3,7 @@
 import Card from "@/components/card"
 import SlideEffect from "@/components/slide-effect"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Code, Brain, MessageSquareDot, Cloud, Shield, Users } from "lucide-react"
+import * as LucideIcons from "lucide-react"
 import Link from "next/link"
 
 const settings = {
@@ -13,42 +13,42 @@ const settings = {
     {
       title: 'Produtos Digitais',
       content: 'Construímos produtos digitais de ponta a ponta. Do discovery ao deploy, passando por design, desenvolvimento, arquitetura e implementação.',
-      icon: Code,
+      icon: LucideIcons.Code,
       href: null,
       highlight: false,
     },
     {
       title: 'Gestão de Atendimento com IA',
       content: 'Centralize WhatsApp, Instagram e todos os seus canais em um painel inteligente com agentes de IA, automação e métricas em tempo real.',
-      icon: MessageSquareDot,
+      icon: LucideIcons.MessageSquareDot,
       href: '/gestao-atendimento-ia',
       highlight: true,
     },
     {
       title: 'Inteligência Artificial',
       content: 'Da análise de dados à automação inteligente. Potencializamos seu negócio com soluções de IA avançadas que impulsionam inovação e eficiência.',
-      icon: Brain,
+      icon: LucideIcons.Brain,
       href: null,
       highlight: false,
     },
     {
       title: 'Nuvem',
       content: 'Migração, otimização e gerenciamento em nuvem. Sua empresa escala com flexibilidade, segurança e eficiência. AWS Partner oficial.',
-      icon: Cloud,
+      icon: LucideIcons.Cloud,
       href: null,
       highlight: false,
     },
     {
       title: 'Cybersegurança',
       content: 'Proteção contra ameaças digitais com soluções robustas e personalizadas. Avaliação de vulnerabilidade, resposta a incidentes e segurança de dados.',
-      icon: Shield,
+      icon: LucideIcons.Shield,
       href: null,
       highlight: false,
     },
     {
       title: 'Outsourcing',
       content: 'Profissionais qualificados de design, frontend, backend e arquitetura para integrar sua equipe com agilidade e qualidade.',
-      icon: Users,
+      icon: LucideIcons.Users,
       href: null,
       highlight: false,
     },
@@ -76,7 +76,7 @@ export default function Services() {
               {service.href && (
                 <Link href={service.href} className="mt-2">
                   <Button variant="link" className="text-primary p-0">
-                    Saiba mais <ArrowRight className="w-4 h-4" />
+                    Saiba mais <LucideIcons.ArrowRight className="w-4 h-4" />
                   </Button>
                 </Link>
               )}

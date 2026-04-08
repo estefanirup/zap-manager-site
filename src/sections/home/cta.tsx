@@ -2,7 +2,7 @@
 
 import SlideEffect from "@/components/slide-effect"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import * as LucideIcons from "lucide-react";
 import Link from "next/link"
 
 const settings = {
@@ -27,7 +27,7 @@ export default function CTA() {
         <Link href={settings.cta.href} target="_blank" rel="noopener noreferrer">
           <Button size="lg">
             {settings.cta.content}
-            <ArrowRight />
+            <LucideIcons.ArrowRight />
           </Button>
         </Link>
       </SlideEffect>

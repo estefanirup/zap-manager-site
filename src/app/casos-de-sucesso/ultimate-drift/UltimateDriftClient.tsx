@@ -4,7 +4,7 @@ import { useState } from "react"
 import Footer from "@/sections/footer"
 import Navbar from "@/components/navbar"
 import TextRevealEffect from "@/components/text-reveal-effect"
-import { ArrowRight,ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react"
+import * as LucideIcons from "lucide-react";
 import Link from "next/link"
 import Image from "next/image"
 import SlideEffect from "@/components/slide-effect"
@@ -67,7 +67,7 @@ export default function UltimateDrift() {
           href="/casos-de-sucesso"
           className="inline-flex items-center gap-2 text-sm text-primary mb-10 hover:opacity-70 transition"
         >
-          <ArrowLeft className="w-4 h-4" />
+          <LucideIcons.ArrowLeft className="w-4 h-4" />
           Voltar para Casos de Sucesso
         </Link>
 
@@ -216,14 +216,14 @@ export default function UltimateDrift() {
               onClick={prev}
               className="absolute left-2 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur p-2 rounded-full border"
             >
-              <ChevronLeft />
+              <LucideIcons.ChevronLeft />
             </button>
 
             <button
               onClick={next}
               className="absolute right-2 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur p-2 rounded-full border"
             >
-              <ChevronRight />
+              <LucideIcons.ChevronRight />
             </button>
           </div>
 
@@ -335,7 +335,7 @@ export default function UltimateDrift() {
             <Link href="https://wa.me/5511943820623" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="mt-4">
                 Falar com especialista
-                <ArrowRight className="w-4 h-4" />
+                <LucideIcons.ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
           </div>

@@ -6,19 +6,20 @@ import Navbar from "@/components/navbar"
 import SlideEffect from "@/components/slide-effect"
 import TextRevealEffect from "@/components/text-reveal-effect"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, ArrowRight, Clock, FileText, Fingerprint, Receipt, RotateCcw, BarChart3, LineChart, MessageSquare } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
+import * as Icons from "@/components/ui/icons";
+
 const features = [
-  { title: 'Lançamento de Horas', description: 'Colaboradores PJ e CLT registram horas por projeto, detalham atividades do dia, conquistas e impedimentos.', icon: Clock },
-  { title: 'Holerite Eletrônico', description: 'Geração automatizada de contracheques com acesso digital para consulta a qualquer momento.', icon: FileText },
-  { title: 'Controle de Ponto', description: 'Registro de entrada, saída, intervalo e retorno. Gestão completa da jornada para colaboradores CLT.', icon: Fingerprint },
-  { title: 'Envio de Notas (NFe)', description: 'Colaboradores PJ enviam notas fiscais diretamente pelo app, com campo dedicado e fluxo simplificado.', icon: Receipt },
-  { title: 'Pedidos de Reembolso', description: 'Solicitação, aprovação e rejeição de reembolsos com possibilidade de refazer requisições rejeitadas.', icon: RotateCcw },
-  { title: 'Avaliação de Desempenho', description: 'Avaliações periódicas para medir performance, identificar melhorias e promover desenvolvimento profissional.', icon: BarChart3 },
-  { title: 'Relatórios Analíticos', description: 'Dados sobre custos com pessoal, rotatividade, indicadores de desempenho e horas por projeto.', icon: LineChart },
-  { title: 'Comunicação Interna', description: 'Canal direto entre colaboradores e RH, incluindo contato rápido via configuração remota.', icon: MessageSquare },
+  { title: 'Lançamento de Horas', description: 'Colaboradores PJ e CLT registram horas...', icon: Icons.Clock },
+  { title: 'Holerite Eletrônico', description: 'Geração automatizada de contracheques...', icon: Icons.FileText },
+  { title: 'Controle de Ponto', description: 'Registro de entrada, saída...', icon: Icons.Fingerprint },
+  { title: 'Envio de Notas (NFe)', description: 'Colaboradores PJ enviam notas fiscais...', icon: Icons.Receipt },
+  { title: 'Pedidos de Reembolso', description: 'Solicitação, aprovação e rejeição...', icon: Icons.RotateCcw },
+  { title: 'Avaliação de Desempenho', description: 'Avaliações periódicas para medir performance...', icon: Icons.BarChart },
+  { title: 'Relatórios Analíticos', description: 'Dados sobre custos com pessoal...', icon: Icons.LineChart },
+  { title: 'Comunicação Interna', description: 'Canal direto entre colaboradores e RH...', icon: Icons.MessageSquare },
 ]
 
 const technologies = [
@@ -59,7 +60,7 @@ export default function AppSilicon() {
             href="/casos-de-sucesso"
             className="inline-flex items-center gap-2 text-sm text-primary mb-8 hover:opacity-80 transition-all"
           >
-            <ArrowLeft className="w-4 h-4" />
+            <Icons.ArrowLeft className="w-4 h-4" />
             Voltar para Casos de Sucesso
           </Link>
 
@@ -263,7 +264,7 @@ export default function AppSilicon() {
                 <Link href="https://wa.me/5511943820623" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="mt-4">
                     Falar com especialista
-                    <ArrowRight className="w-4 h-4" />
+                    <Icons.ArrowRight className="w-4 h-4" />
                   </Button>
                 </Link>
               </div>

@@ -1,14 +1,14 @@
 'use client'
 
-import { Linkedin, Instagram, Mail, MessageCircle } from "lucide-react"
 import Link from "next/link"
+import { BsLinkedin, BsInstagram, BsWhatsapp, BsEnvelope } from "react-icons/bs"
 
 const settings = {
   socialMedia: [
-    { title: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/company/tech-silicon-village/posts/?feedView=all' },
-    { title: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/siliconvillagebr/' },
-    { title: 'WhatsApp', icon: MessageCircle, href: 'https://wa.me/5511943820623' },
-    { title: 'E-mail', icon: Mail, href: 'mailto:contato@siliconvillage.dev' },
+    { title: 'LinkedIn', icon: BsLinkedin, href: 'https://www.linkedin.com/company/tech-silicon-village/posts/?feedView=all' },
+    { title: 'Instagram', icon: BsInstagram, href: 'https://www.instagram.com/siliconvillagebr/' },
+    { title: 'WhatsApp', icon: BsWhatsapp, href: 'https://wa.me/5511943820623' },
+    { title: 'E-mail', icon: BsEnvelope, href: 'mailto:contato@siliconvillage.dev' },
   ],
   company: 'Silicon Village Innovation',
   cnpj: 'CNPJ: 33.206.490/0001-36',
@@ -23,11 +23,21 @@ export default function Footer() {
 
       {/* Social links */}
       <div className="flex flex-wrap md:flex-row items-center justify-center gap-7 md:gap-10">
-        {settings.socialMedia.map((social, index) => (
-          <Link title={social.title} key={index} href={social.href} target="_blank" rel="noopener noreferrer">
-            <social.icon />
-          </Link>
-        ))}
+        {settings.socialMedia.map((social, index) => {
+          const Icon = social.icon
+          return (
+            <Link 
+              title={social.title} 
+              key={index} 
+              href={social.href} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-2xl hover:text-primary transition-colors"
+            >
+              <Icon />
+            </Link>
+          )
+        })}
       </div>
 
       {/* Company info */}

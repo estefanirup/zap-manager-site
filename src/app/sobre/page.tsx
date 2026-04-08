@@ -6,8 +6,7 @@ import Navbar from "@/components/navbar"
 import SlideEffect from "@/components/slide-effect"
 import TextRevealEffect from "@/components/text-reveal-effect"
 import Image from "next/image"
-import { Star, Target, Users, Zap, Globe, BookOpen } from "lucide-react"
-
+import { Star, Target, Users, Zap, Globe, BookOpen } from "@/components/ui/icons";
 const historia = [
   { ano: "2016", texto: "A ideia da Silicon Village surge de uma comunidade de talentos, na 'Vila do Silício', quando o futuro fundador começou a acomodar profissionais de tecnologia." },
   { ano: "2019", texto: "A empresa é formalmente constituída, adotando o nome Silicon Village e consolidando a cultura de colaboração e excelência técnica." },

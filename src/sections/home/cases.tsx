@@ -3,7 +3,7 @@
 import Card from "@/components/card"
 import SlideEffect from "@/components/slide-effect"
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import * as LucideIcons from "lucide-react";
 import Link from "next/link"
 
 const settings = {
@@ -36,7 +36,7 @@ export default function Cases() {
               <p>{item.description}</p>
               <Link href={item.href} className="mt-2">
                 <Button variant="link" className="text-primary p-0">
-                  Ler case completo <ArrowRight className="w-4 h-4" />
+                  Ler case completo <LucideIcons.ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>
             </Card>
