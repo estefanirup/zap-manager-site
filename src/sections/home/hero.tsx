@@ -8,7 +8,7 @@ import * as LucideIcons from "lucide-react";
 import Link from "next/link"
 
 const settings = {
-  headline: 'Tecnologia que transforma   negócios.',
+  headline: 'Tecnologia que transforma.',
   subheadline: 'Somos especialistas em inovação tecnológica com mais de 20 anos de mercado. Desenvolvemos produtos digitais, soluções de IA e infraestrutura em nuvem para empresas que exigem performance, segurança e resultado.',
   mainCTA: {
     content: 'Conheça nossos serviços',

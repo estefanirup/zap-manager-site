@@ -10,7 +10,7 @@ import { useState } from "react"
 
 const settings = {
   navLinks: [
-    { name: 'início', href: '/' },       
+    { name: 'início', href: '/' },
     { name: 'solução', href: '#services' },
     { name: 'clientes', href: '#clients' },
     { name: 'cases', href: '#cases' },
@@ -27,6 +27,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => setIsOpen(!isOpen)
+
+  const handleMobileLinkClick = (href: string) => {
+    toggleMenu()
+    if (href.startsWith('#')) {
+      const section = document.querySelector(href)
+      if (section) section.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <nav className="w-full py-4 flex items-center justify-between px-4 xl:px-0 relative z-50">
@@ -77,13 +85,12 @@ export default function Navbar() {
               <ul className="flex flex-col space-y-2 font-medium text-black text-base select-none">
                 {settings.navLinks.map(link => (
                   <li key={link.name}>
-                    <a
-                      href={link.href}
-                      onClick={toggleMenu}
-                      className="block py-2 capitalize"
+                    <button
+                      onClick={() => handleMobileLinkClick(link.href)}
+                      className="block py-2 capitalize w-full text-left"
                     >
                       {link.name}
-                    </a>
+                    </button>
                   </li>
                 ))}
               </ul>
