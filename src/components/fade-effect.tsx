@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils"
 import { cva, type VariantProps } from "class-variance-authority"
 
 const fadeEffectVariants = cva(
-  'absolute w-full h-1/3 bottom-0 left-0 from-transparent to-white z-50',
+  'absolute w-full h-1/3 bottom-0 left-0 from-transparent to-white z-10 pointer-events-none',
   {
     variants: {
       direction: {

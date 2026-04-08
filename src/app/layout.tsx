@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
-import "./globals.css";
+import { Public_Sans } from "next/font/google";
+import "@/app/globals.css";
 import LenisProvider from "@/providers/lenis";
 
-const dmSans = DM_Sans({
-  variable: "--font-geist-sans",
+const publicSans = Public_Sans({
+  variable: "--font-public-sans",
   subsets: ["latin"],
 });
 
-
 export const metadata: Metadata = {
-  title: "Next SaaS",
-  description: "Change this"
+  title: {
+    default: "Silicon Village | Inovação Tecnológica com IA, Design e Software",
+    template: "%s | Silicon Village",
+  },
+  description: "Somos especialistas em inovação tecnológica. Desenvolvemos produtos digitais, soluções de IA, gestão de atendimento inteligente e infraestrutura em nuvem. +20 anos de mercado, AWS Partner.",
 };
 
 export default function RootLayout({
@@ -20,9 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="pt-BR" suppressHydrationWarning>
       <body
-        className={`${dmSans.className} antialiased w-full min-h-screen overflow-x-hidden`}
+        className={`${publicSans.className} antialiased w-full min-h-screen overflow-x-hidden`}
       >
         <LenisProvider>
           {children}

@@ -3,12 +3,15 @@
 
 @theme {
   --color-background: #ffffff;
-  --color-foreground: #707070;
-  --color-primary: #6ECE9D;
-  --color-secondary: #F8F5ED;
-  --color-accent: #FFDA6E;
+  --color-foreground: #2a2a2a;
+  --color-primary: #3146B8;
+  --color-primary-light: #1437E3;
+  --color-secondary: #EEF0F8;
+  --color-accent: #52DFD0;
   --color-muted: #F0F0F0;
   --color-border: rgba(0, 0, 0, 0.1);
+  --color-pink: #F4226E;
+  --color-yellow: #FFE187;
 
   --text-base: 18px;
   --text-link: 16px;
@@ -29,3 +32,11 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
