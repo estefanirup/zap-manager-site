@@ -1,4 +1,3 @@
-// Navbar.tsx
 'use client'
 
 import Logo from "./logo"
@@ -11,11 +10,11 @@ import { useState } from "react"
 
 const settings = {
   navLinks: [
-    { name: 'início', href: '#home' },
+    { name: 'início', href: '/' },       
     { name: 'solução', href: '#services' },
     { name: 'clientes', href: '#clients' },
     { name: 'cases', href: '#cases' },
-    { name: 'sobre', href: '/sobre' }, // agora é rota dedicada
+    { name: 'sobre', href: '/sobre' },
     { name: 'contato', href: '#cta' },
   ],
   cta: {
@@ -72,7 +71,7 @@ export default function Navbar() {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.4 }}
-            className="fixed top-16 left-0 w-full z-50 overflow-y-auto"
+            className="fixed top-16 left-0 w-full z-50 bg-white shadow-md overflow-y-auto"
           >
             <div className="flex flex-col p-6 space-y-6">
               <ul className="flex flex-col space-y-2 font-medium text-black text-base select-none">
