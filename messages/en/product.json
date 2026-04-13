@@ -1,0 +1,233 @@
+{
+  "hero": {
+  "headline": [
+    "Your WhatsApp wasn’t built to run a business.",
+     "Our platform was."
+  ],
+  "subheadline": "Centralize WhatsApp, Instagram, and email in one intelligent dashboard with AI, real-time metrics, and automation.",
+  "mainCTA": "Schedule free diagnosis",
+  "secondaryCTA": "View demo",
+  "channelsLabel": "Supported channels and integrations"
+},
+
+  "features1": {
+    "badge": "why change now",
+    "title": "Problems your company faces today",
+    "description": "If you identify with any of these scenarios, your customer service operation is leaving money on the table.",
+
+    "card1": {
+      "title": "You don’t know what’s happening in your support operation",
+      "content": "What is your team's average response time? How many conversations went unanswered this week? Which agent is performing best? Without a structured platform, these answers simply don’t exist."
+    },
+    "card2": {
+      "title": "Growth means higher costs",
+      "content": "As message volume increases, the only option is to hire more people. Without knowing if your current team is productive, costs grow but efficiency doesn’t."
+    },
+    "card3": {
+      "title": "Your team answers the same questions all day",
+      "content": "Business hours, pricing, order status, basic product info. Hours wasted daily on repetitive responses that could be automated."
+    },
+    "card4": {
+      "title": "Missed messages are missed sales",
+      "content": "Leads that come through Instagram and get no response. Customers who message on WhatsApp and only hear back the next day. Every ignored conversation is an opportunity lost to a competitor."
+    }
+  },
+
+  "features2": {
+  "badge": "the solution",
+  "title": "Full visibility, real control",
+  "description": "A single dashboard where you track every conversation, measure team performance, and make decisions based on data, not assumptions.",
+
+  "card1": {
+    "title": "Metrics that show the truth",
+    "content": "Track your operation performance in real time. No guessing, no relying on manual reports.",
+    "metrics": {
+      "0": {
+        "title": "Response time",
+        "description": "See in seconds how long your team takes to reply to each customer"
+      },
+      "1": {
+        "title": "Volume by channel",
+        "description": "Identify which channels generate the most demand"
+      },
+      "2": {
+        "title": "Customer satisfaction (CSAT)",
+        "description": "Automatic surveys after each resolved conversation"
+      },
+      "3": {
+        "title": "Agent performance",
+        "description": "Compare productivity, speed, and quality across agents"
+      }
+    }
+  },
+
+  "card2": {
+    "title": "Automation that works for you",
+    "content": "Smart workflows in n8n distribute conversations, label interactions, send automatic replies, and alert managers when response times exceed limits. Your team focuses on what matters.",
+    "automations": {
+      "0": "New Instagram conversation → assign to sales team",
+      "1": "Message contains \"cancel\" → route to retention",
+      "2": "No response for 5 min → supervisor alert",
+      "3": "Conversation resolved → send satisfaction survey"
+    }
+  }
+},
+
+ "features3": {
+  "badge": "artificial intelligence",
+  "title": "AI that serves, learns and evolves",
+  "description": "AI agents tailored to your business. They respond to customers, assist your team and improve as your knowledge base grows.",
+  "cards": {
+    "assistant": {
+      "title": "24/7 Assistant",
+      "content": "An AI agent that automatically responds to customers based on your company’s documentation and history. When it can’t resolve, it hands off to a human with full context."
+    },
+    "copilot": {
+      "title": "AI copilot for your team",
+      "content": "While your agent works, AI assists in the background. It suggests replies, summarizes long conversations, and qualifies leads before human intervention."
+    },
+    "translation": {
+      "title": "Real-time translation",
+      "content": "Serve customers in multiple languages without a multilingual team. AI translates messages both ways automatically."
+    }
+  }
+},
+
+  "features4": {
+    "badge": "your team in control",
+    "title": "Real support management",
+    "description": "Distribute conversations across teams, track individual agent performance, and ensure every customer is answered without delays or gaps.",
+
+    "card1": {
+      "title": "Teams, channels and agents in one dashboard",
+      "content": "Create dedicated teams for sales, support and post-sales operations. Assign agents to specific channels, define concurrency limits for conversations, and monitor in real time who is online, who is available and who is overloaded. Full operational visibility for managers and supervisors.",
+      "cta": "Schedule free diagnosis",
+      "labels": {
+        "0": "Sales",
+        "1": "Support",
+        "2": "Post-sales",
+        "3": "Finance",
+        "4": "Retention",
+        "5": "Technical",
+        "6": "Triage"
+      }
+    },
+
+    "card2": {
+      "title": "Response time alerts",
+      "content": "Set targets for first response time, follow-up time and resolution time. Automated n8n workflows continuously monitor these thresholds and proactively alert managers before any SLA is breached, preventing delays and customer dissatisfaction."
+    },
+
+    "card3": {
+      "title": "Reports that drive decisions",
+      "content": "Six ready-to-use report types: by conversation, agent, team, channel, label and CSAT. All reports are exportable for offline analysis or executive presentations, enabling data-driven operational decisions."
+    }
+  },
+
+
+  "pricing": {
+    "title": "Pricing",
+    "description": "All plans include the full platform with no feature restrictions. What changes is the level of automation, AI, and operational support.",
+
+    "plan_1": {
+      "planName": "Essential",
+      "price": 497,
+      "currency": "R$",
+      "period": "/month",
+      "description": "For companies starting to professionalize digital support.",
+      "cta": "Talk to a consultant",
+      "href": "https://wa.me/5511943820623",
+      "features": [
+        "All channels (WhatsApp, Instagram, Facebook, TikTok, Telegram, email, SMS)",
+        "Unified inbox with teams and auto-assignment",
+        "Reports by agent, channel, team and CSAT",
+        "Help Center and knowledge base",
+        "Customer profiles with full history",
+        "Saved replies, labels and internal notes",
+        "Business hours configuration",
+        "Dedicated VPS hosting",
+        "Team training (2h)"
+      ]
+    },
+
+    "plan_2": {
+      "planName": "Professional",
+      "price": 897,
+      "currency": "R$",
+      "period": "/month",
+      "description": "For operations that need intelligent automation and system integrations.",
+      "cta": "Talk to a consultant",
+      "href": "https://wa.me/5511943820623",
+      "features": [
+        "Everything in Essential",
+        "Custom automation flows (n8n)",
+        "Smart conversation routing",
+        "CRM, ERP and internal system integrations",
+        "Automated follow-up campaigns",
+        "Response time alerts for managers",
+        "Bi-weekly governance meetings",
+        "2h monthly technical support included"
+      ]
+    },
+
+    "plan_3": {
+      "planName": "Enterprise",
+      "priceLabel": "On request",
+      "description": "For operations requiring advanced AI, complex integrations and dedicated support.",
+      "cta": "Request proposal",
+      "href": "https://wa.me/5511943820623",
+      "features": [
+        "Everything in Professional",
+        "AI agents for automated support",
+        "AI-based lead qualification",
+        "Automatic conversation summarization and translation",
+        "Unlimited integrations via n8n",
+        "Fully custom platform setup",
+        "Dedicated account manager",
+        "Priority support"
+      ]
+    },
+
+    "addon": {
+      "title": "AI Agents",
+      "price": "from R$ 550",
+      "description": "per agent (one-time setup). Includes workflow design in n8n, prompt configuration, training with company data and testing. Monthly operational cost varies based on API usage."
+    }
+  },
+
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": {
+      "0": {
+        "question": "Does this replace my support team?",
+        "answer": "No. The platform works alongside your team, automating repetitive responses and organizing workflows. Your agents focus only on what matters: closing deals and handling complex cases."
+      },
+      "1": {
+        "question": "Does it work with WhatsApp and Instagram?",
+        "answer": "Yes. You can connect WhatsApp, Instagram, Facebook, email, and other channels into a single dashboard, centralizing all communication."
+      },
+      "2": {
+        "question": "Do I need technical knowledge to use it?",
+        "answer": "No. We handle implementation, setup, and training. You receive a fully operational system."
+      },
+      "3": {
+        "question": "How does the AI work?",
+        "answer": "AI automatically answers common questions, qualifies leads, and hands off to a human agent when needed, always preserving full conversation context."
+      },
+      "4": {
+        "question": "Is my data secure?",
+        "answer": "Yes. The solution can run on a dedicated VPS, ensuring full control over your data and history."
+      },
+      "5": {
+        "question": "How long does it take to get started?",
+        "answer": "The initial setup can be done quickly. After that, we refine automations as your operation evolves."
+      }
+    }
+  },
+
+  "cta": {
+    "title": "Organize your support and stop losing sales",
+    "description": "Discover how to centralize your channels...",
+    "button": "Book a free assessment"
+  }
+}

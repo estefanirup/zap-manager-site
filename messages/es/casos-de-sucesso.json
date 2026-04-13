@@ -1,0 +1,21 @@
+{
+  "cases": {
+    "title": "Casos de Éxito",
+    "description": "Proyectos reales que demuestran cómo Silicon Village transforma desafíos en soluciones tecnológicas que generan resultados.",
+
+    "items": [
+      {
+        "title": "Ultimate Drift",
+        "description": "Cómo la tecnología transformó el mayor campeonato de drift de Brasil. Aplicación completa para jueces, pilotos y público con puntuaciones en vivo e historial en tiempo real.",
+        "date": "24 de febrero de 2025",
+        "href": "/casos-de-sucesso/ultimate-drift"
+      },
+      {
+        "title": "App Silicon",
+        "description": "Plataforma interna completa para gestión financiera, registro de horas y envío de documentos. Simplificando el día a día de colaboradores PJ y CLT.",
+        "date": "25 de febrero de 2025",
+        "href": "/casos-de-sucesso/app-silicon"
+      }
+    ]
+  }
+}

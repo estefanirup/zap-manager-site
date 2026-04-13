@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "cases": "Cases",
+    "about": "About Us",
+    "contact": "Contact",
+    "cta": "Book a consultation"
+  },
+  "home": {
+    "headline": "Technology that transforms.",
+    "subheadline": "We are specialists in technological innovation with over 20 years of experience. We develop digital products, AI solutions and cloud infrastructure for companies that demand performance, security and results.",
+    "mainCTA": "Explore our services",
+    "secondaryCTA": "Talk to a specialist",
+    "stats": {
+      "years": "+20",
+      "yearsLabel": "years in the market",
+      "countries": "3",
+      "countriesLabel": "countries of operation",
+      "aws": "AWS",
+      "awsLabel": "Official Partner"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Complete technology solutions for companies that need performance, security and innovation.",
+    "digitalCore": {
+      "title": "Digital Core",
+      "content": "Continuous system maintenance and evolution. We allocate dedicated squads to maintain legacy systems and accelerate new deliveries with technological stability."
+    },
+    "atendimento": {
+      "title": "AI-Powered Customer Service",
+      "content": "Centralize WhatsApp, Instagram and all your channels in one intelligent dashboard with AI agents, automation and real-time metrics.",
+      "badge": "new"
+    },
+    "ventureBuilding": {
+      "title": "Venture Building",
+      "content": "Co-creation of new businesses. We invest in technological development in exchange for equity, sharing risk and success."
+    },
+    "squadAI": {
+      "title": "Squad AI",
+      "content": "AI-accelerated delivery with a fixed monthly value model. We handle all engineering and architecture, focused on speed and predictability."
+    },
+    "consultoria": {
+      "title": "Specialized Consulting",
+      "content": "Strategic, tactical and operational approach focused on innovation, digital transformation, architecture and agility."
+    },
+    "outsourcing": {
+      "title": "Strategic Outsourcing",
+      "content": "Allocation of high-performance professionals and squads with governance, productivity and rapid integration to your team."
+    },
+    "learnMore": "Learn more"
+  },
+  "clients": {
+    "title": "Companies that trust Silicon Village",
+    "partner": {
+      "label": "Official Partner",
+      "description": "Infrastructure, security and scalability backed by the world's largest cloud platform."
+    }
+  },
+  "cases": {
+    "title": "Success Stories",
+    "listDescription": "Real projects that demonstrate how Silicon Village transforms challenges into technology solutions that deliver results.",
+    "drift": {
+      "title": "Ultimate Drift",
+      "description": "How technology transformed the biggest drift championship in Brazil. App for judges, drivers and audience with live scores and real-time history.",
+      "date": "February 24, 2025"
+    },
+    "silicon": {
+      "title": "App Silicon",
+      "description": "Complete internal platform for financial management, time tracking and document submission. Simplifying the team's daily routine.",
+      "date": "February 25, 2025"
+    },
+    "readMore": "Read full case study",
+    "back": "Back to Success Stories",
+    "nextCase": "Next case",
+    "prevCase": "Previous case"
+  },
+  "about": {
+    "title": "Our Story",
+    "history": {
+      "p1": "Silicon Village began to take shape organically and collaboratively in 2016. After moving to São Paulo, founder Jeferson Guardezi moved into a charming residential village composed of eight houses. As he formed teams and brought new talent to work on technology projects, these professionals ended up moving there, occupying about six of the village's houses.",
+      "p2": "This environment of proximity, innovation and collaboration led the place to be affectionately nicknamed \"Vila do Silício\" or \"Silicon Village,\" a name that inspired and officially baptized the company at its founding in 2019.",
+      "p3": "Since the beginning of its operations, Silicon Village has shown accelerated growth, managing to double in size year after year. The great engine of this success is our strong bet on human potential, seeking promising talents at institutions of excellence like UTFPR.",
+      "p4": "We've consolidated a culture of empowerment, where we believe that the hunger to learn and proactivity are the greatest differentiators for building exceptional solutions.",
+      "p5": "Our greatest achievements go beyond numbers, reflecting directly in the technical excellence and continuous development of our team. An important milestone in our trajectory was the recognition of our delivery quality with the AWS Partner Select badge.",
+      "p6": "Additionally, we invest in the academic evolution of our talents, funding qualifications such as MBAs. We deeply celebrate every success story, seeing professionals who built their foundations with us achieve brilliant careers and recognition."
+    },
+    "team": "Our Team",
+    "mission": {
+      "title": "Mission",
+      "content": "Transform human potential and technological uncertainty into real value, acting as the bridge that connects engineering excellence to complex business challenges, ensuring the continuous growth of clients and employees."
+    },
+    "vision": {
+      "title": "Vision",
+      "content": "To be a hub of engineering and innovation where extraordinary people build extraordinary technology. To become an international reference in digital solutions and Artificial Intelligence, combining technical excellence, human development and real business impact."
+    },
+    "values": {
+      "title": "Values",
+      "items": {
+        "excellence": "NON-NEGOTIABLE TECHNICAL EXCELLENCE",
+        "leadership": "TRANSFORM POTENTIAL INTO LEADERSHIP",
+        "simplicity": "RESOLUTE SIMPLICITY",
+        "transparency": "RADICAL TRANSPARENCY (NO DRAMA)",
+        "ego": "LOW EGO, HIGH IMPACT",
+        "frugality": "FRUGALITY (DO MORE WITH LESS)",
+        "knowledge": "KNOWLEDGE IS LIKE A GLASS OF WATER"
+      }
+    },
+    "international": {
+      "title": "International Presence",
+      "p1": "The talent we cultivate knows no borders, and our capacity for global expansion is already a solid and implemented reality. Throughout our trajectory, we crossed Brazil's borders and formally structured our international presence with the establishment of companies in the United States and Portugal.",
+      "p2": "This international infrastructure we've built not only attests to the global quality of our software engineering, but also directly connects our talents to a worldwide innovation ecosystem.",
+      "locations": {
+        "pr": { "city": "Medianeira, PR", "role": "HQ & Engineering" },
+        "sp": { "city": "São Paulo, SP", "role": "Commercial Operations" },
+        "us": { "city": "Miami, USA", "role": "International Operations" },
+        "pt": { "city": "Portugal", "role": "European Presence" }
+      }
+    }
+  },
+  "cta": {
+    "title": "Have a project in mind?",
+    "description": "We're ready to turn your ideas into innovative digital solutions. Talk to our team.",
+    "button": "Book a meeting"
+  },
+  "footer": {
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "cases": "Success Stories",
+    "schedule": "Book a Meeting",
+    "company": "Silicon Village Innovation",
+    "copyright": "© 2026 Silicon Village Innovation. All rights reserved."
+  }
+}

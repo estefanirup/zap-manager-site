@@ -3,67 +3,67 @@
 import Badge from "@/components/badge"
 import Card from "@/components/card"
 import SlideEffect from "@/components/slide-effect"
+import { useTranslations } from "next-intl"
 import * as LucideIcons from "lucide-react"
 
-const settings = {
-  badge: {
-    number: 3,
-    text: 'inteligência artificial',
-  },
-  title: 'IA que atende, aprende e evolui',
-  description: 'Agentes de inteligência artificial construídos sob medida para o seu negócio. Eles respondem clientes, auxiliam sua equipe e evoluem conforme a base de conhecimento cresce.',
-  card_1: {
-    title: 'Assistente 24h',
-    content: 'Um agente de IA que responde clientes automaticamente com base na documentação e no histórico da empresa. Quando não consegue resolver, transfere para um humano com o contexto completo da conversa.',
-    icon: LucideIcons.Bot,
-  },
-  card_2: {
-    title: 'Assistente inteligente para sua equipe',
-    content: 'Enquanto o agente atende, a IA trabalha junto. Sugere respostas com base no contexto, resume conversas longas para handoffs rápidos e qualifica leads coletando dados essenciais antes da intervenção humana.',
-    icon: LucideIcons.Sparkles,
-  },
-  card_3: {
-    title: 'Tradução em tempo real',
-    content: 'Atenda clientes em diversos idiomas sem precisar de uma equipe multilíngue. A IA traduz mensagens automaticamente nos dois sentidos da conversa.',
-    icon: LucideIcons.Globe,
-  },
-}
-
 export default function Features3() {
+  const t = useTranslations("product.features3")
+
+  const cards = [
+    { key: "assistant", icon: LucideIcons.Bot },
+    { key: "copilot", icon: LucideIcons.Sparkles },
+    { key: "translation", icon: LucideIcons.Globe },
+  ]
+
   return (
     <div className="space-y-6 sm:space-y-7 md:space-y-8 lg:space-y-10 mx-auto text-center">
+      
       {/* Badge */}
       <SlideEffect>
-        <Badge number={settings.badge.number} text={settings.badge.text} />
+        <Badge number={3} text={t("badge")} />
       </SlideEffect>
 
       {/* Title */}
       <SlideEffect>
-        <h2 className="text-2xl md:text-4xl lg:text-header capitalize text-transparent bg-clip-text bg-gradient-to-b from-black to-black/60 font-medium leading-normal">{settings.title}</h2>
+        <h2 className="text-2xl md:text-4xl lg:text-header capitalize text-transparent bg-clip-text bg-gradient-to-b from-black to-black/60 font-medium leading-normal">
+          {t("title")}
+        </h2>
       </SlideEffect>
 
       {/* Description */}
-      <SlideEffect className="px-2 sm:px-10 md:px-0 w-full md:max-w-3/4 mx-auto text-sm lg:text-base">{settings.description}</SlideEffect>
+      <SlideEffect className="px-2 sm:px-10 md:px-0 w-full md:max-w-3/4 mx-auto text-sm lg:text-base">
+        {t("description")}
+      </SlideEffect>
 
       {/* Cards */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {[settings.card_1, settings.card_2, settings.card_3].map((card, index) => (
-          <SlideEffect
-            key={index}
-            direction="top"
-            delay={index * 0.2}
-            className="col-span-1 h-full"
-            isSpring={false}
-          >
-            <Card>
-              <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center mb-4 mx-auto">
-                <card.icon className="w-6 h-6 text-black" />
-              </div>
-              <h3 className="text-xl md:text-title text-black font-medium">{card.title}</h3>
-              <p>{card.content}</p>
-            </Card>
-          </SlideEffect>
-        ))}
+        {cards.map((card, index) => {
+          const Icon = card.icon
+
+          return (
+            <SlideEffect
+              key={card.key}
+              direction="top"
+              delay={index * 0.2}
+              className="col-span-1 h-full"
+              isSpring={false}
+            >
+              <Card>
+                <div className="w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center mb-4 mx-auto">
+                  <Icon className="w-6 h-6 text-black" />
+                </div>
+
+                <h3 className="text-xl md:text-title text-black font-medium">
+                  {t(`cards.${card.key}.title`)}
+                </h3>
+
+                <p>
+                  {t(`cards.${card.key}.content`)}
+                </p>
+              </Card>
+            </SlideEffect>
+          )
+        })}
       </div>
     </div>
   )

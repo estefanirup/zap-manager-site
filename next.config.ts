@@ -1,14 +1,17 @@
-import type { NextConfig } from "next";
+import createNextIntlPlugin from 'next-intl/plugin'
 
-const nextConfig: NextConfig = {
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
+
+const nextConfig = {
   images: {
     remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
+      { hostname: 'ui-avatars.com' },
+      { hostname: 'upload.wikimedia.org' },
+      { hostname: 'cdn.worldvectorlogo.com' },
+      { hostname: 'cdn.jsdelivr.net' },
+      { hostname: 'flagcdn.com' },
     ],
   },
-};
+}
 
-export default nextConfig;
+export default withNextIntl(nextConfig)

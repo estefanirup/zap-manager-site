@@ -1,31 +1,31 @@
 'use client'
 
+import {useTranslations} from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import Navbar from "@/components/navbar"
 import SlideEffect from "@/components/slide-effect"
 import TextBlurEffect from "@/components/text-blur-effect"
 import { Button } from "@/components/ui/button"
 import * as LucideIcons from "lucide-react";
-import Link from "next/link"
-
-const settings = {
-  headline: 'Tecnologia que transforma.',
-  subheadline: 'Somos especialistas em inovação tecnológica com mais de 20 anos de mercado. Desenvolvemos produtos digitais, soluções de IA e infraestrutura em nuvem para empresas que exigem performance, segurança e resultado.',
-  mainCTA: {
-    content: 'Conheça nossos serviços',
-    href: '#servicos'
-  },
-  secondaryCTA: {
-    content: 'Falar com especialista',
-    href: 'https://wa.me/5511943820623'
-  },
-  stats: [
-    { value: '+20', label: 'anos de mercado' },
-    { value: '4', label: 'países de atuação' },
-    { value: 'AWS', label: 'Partner oficial' },
-  ]
-}
 
 export default function HomeHero() {
+  const t = useTranslations('home')
+
+  const stats = [
+    {
+      value: t('stats.years'),
+      label: t('stats.yearsLabel')
+    },
+    {
+      value: t('stats.countries'),
+      label: t('stats.countriesLabel')
+    },
+    {
+      value: t('stats.aws'),
+      label: t('stats.awsLabel')
+    }
+  ]
+
   return (
     <div className="space-y-6 md:space-y-8 z-50 relative">
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -45,44 +45,63 @@ export default function HomeHero() {
           <rect width="100%" height="100%" fill="url(#dotfade-home)" />
         </svg>
       </div>
+
       <Navbar />
+
       <section className="flex flex-col gap-8 lg:gap-11 items-center text-center py-10 md:py-16">
         <h1 className="text-black text-3xl md:text-5xl lg:text-6xl font-medium tracking-tight leading-tight max-w-3xl mx-auto">
           <TextBlurEffect className="text-transparent bg-clip-text bg-gradient-to-b from-black to-black/60">
-            {settings.headline}
+            {t('headline')}
           </TextBlurEffect>
         </h1>
-        <SlideEffect delay={0} className="text-sm lg:text-base px-6 sm:px-10 md:px-0 md:max-w-2xl mx-auto">
-          {settings.subheadline}
+
+        <SlideEffect className="text-sm lg:text-base px-6 sm:px-10 md:px-0 md:max-w-2xl mx-auto">
+          {t('subheadline')}
         </SlideEffect>
+
         <SlideEffect className="flex flex-col gap-6 items-center justify-center w-full md:w-fit">
           <div className="flex flex-col md:flex-row items-center w-full justify-center gap-3 md:gap-4 mt-1">
-            <Link href={settings.mainCTA.href} className="w-full">
+
+            {/* CTA interno */}
+            <Link href="/gestao-atendimento-ia" className="w-full">
               <Button size='lg' className="capitalize w-full hidden lg:flex">
-                {settings.mainCTA.content}
+                {t('mainCTA')}
                 <LucideIcons.ArrowRight />
               </Button>
               <Button size='default' className="capitalize w-full flex lg:hidden">
-                {settings.mainCTA.content}
+                {t('mainCTA')}
                 <LucideIcons.ArrowRight />
               </Button>
             </Link>
-            <Link href={settings.secondaryCTA.href} target="_blank" rel="noopener noreferrer" className="w-full">
+
+            {/* CTA externo */}
+            <a
+              href="https://wa.me/5511943820623"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full"
+            >
               <Button size='lg' className="capitalize w-full hidden lg:flex" variant='secondary'>
-                {settings.secondaryCTA.content}
+                {t('secondaryCTA')}
               </Button>
               <Button size='default' className="capitalize w-full flex lg:hidden" variant='secondary'>
-                {settings.secondaryCTA.content}
+                {t('secondaryCTA')}
               </Button>
-            </Link>
+            </a>
+
           </div>
         </SlideEffect>
+
         <SlideEffect delay={0.4} className="w-full max-w-2xl mx-auto mt-8">
           <div className="flex items-center justify-center gap-8 md:gap-16">
-            {settings.stats.map((stat, index) => (
+            {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <p className="text-2xl md:text-4xl font-semibold text-primary">{stat.value}</p>
-                <p className="text-xs md:text-sm text-foreground mt-1">{stat.label}</p>
+                <p className="text-2xl md:text-4xl font-semibold text-primary">
+                  {stat.value}
+                </p>
+                <p className="text-xs md:text-sm text-foreground mt-1">
+                  {stat.label}
+                </p>
               </div>
             ))}
           </div>
