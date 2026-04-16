@@ -1,0 +1,56 @@
+{
+  "back": "Voltar para Casos de Sucesso",
+  "date": "25 de fevereiro de 2025",
+  "title": "Sistema completo de gestão de colaboradores",
+
+  "subtitle": "Uma plataforma desenvolvida internamente pela Silicon Village para simplificar a administração de RH, unificando lançamento de horas, controle de ponto, holerites, envio de notas fiscais e comunicação interna em um único app.",
+
+  "context": {
+    "p1": "Na Silicon Village, acreditamos que a tecnologia deve simplificar a vida, não complicá-la. Com uma equipe distribuída entre colaboradores CLT, PJ e estagiários, gerenciar horas, documentos e despesas se tornava cada vez mais complexo. Foi com essa necessidade real que nasceu o App Silicon.",
+    "highlight": "O objetivo era claro: empoderar a equipe com métricas precisas e um uso simplificado, transformando tarefas burocráticas em experiências rápidas e eficientes."
+  },
+
+  "sections": {
+    "financial": {
+      "title": "Gestão financeira descomplicada",
+      "text": "Imaginamos um espaço onde o colaborador pudesse gerenciar suas atividades e despesas sem sair do app. Colaboradores PJ e CLT têm a liberdade de lançar horas para diferentes clientes, detalhando como foi o dia, conquistas e impedimentos, tudo com alguns cliques."
+    },
+
+    "ease": {
+      "title": "Facilidade na palma da mão",
+      "text": "Além de gerenciar atividades, o Silicon permite envio de notas fiscais de despesas rapidamente. Colaboradores PJ têm um campo dedicado para envio de NFe, tornando o processo direto e sem atrito. Pedidos de reembolso podem ser feitos, aprovados ou rejeitados diretamente no app, com possibilidade de refazer requisições."
+    },
+
+    "profiles": {
+      "title": "Três perfis, uma plataforma",
+      "text": "O app se adapta ao tipo de contrato do colaborador, entregando funcionalidades específicas para cada perfil:"
+    }
+  },
+
+  "features": {
+    "title": "Funcionalidades do sistema",
+    "description": "Tudo o que a equipe precisa para gestão de horas, documentos e desempenho em um só lugar."
+  },
+
+  "mockups": {
+    "title": "O app em ação",
+    "description": "Interface pensada para ser simples e direta, permitindo que qualquer colaborador use sem treinamento."
+  },
+
+  "tech": {
+    "title": "Tecnologias utilizadas",
+    "description": "App mobile em Flutter, backoffice em Angular e infraestrutura completa no Firebase com Cloud Functions."
+  },
+
+  "cta": {
+    "title": "Precisa de uma solução sob medida para sua equipe?",
+    "description": "Desenvolvemos sistemas internos que simplificam a operação e empoderam sua equipe com dados e agilidade.",
+    "button": "Falar com especialista"
+  },
+
+  "navigation": {
+    "previous": "Case anterior: Ultimate Drift"
+  }
+  
+}
+

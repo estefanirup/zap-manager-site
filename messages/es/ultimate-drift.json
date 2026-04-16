@@ -1,0 +1,54 @@
+{
+  "back": "Volver a Casos de Éxito",
+  "date": "24 de febrero de 2025",
+  "title": "Plataforma completa para el mayor campeonato de drift de Brasil",
+  "subtitle": "Un ecosistema digital que conecta jueces, pilotos y público en tiempo real, elevando la claridad de las decisiones y la experiencia del evento.",
+  "intro": {
+    "p1": "Cuando Ultimate Drift nos buscó, el escenario era claro. El campeonato crecía rápidamente, pero la tecnología existente no acompañaba esa evolución. Había desorganización operativa, limitaciones en el sistema y una necesidad urgente de estructurar una base sólida capaz de sustentar el crecimiento.",
+    "p2": "Fue en ese contexto que Silicon Village asumió el desafío, con el objetivo de redefinir completamente la forma en que el campeonato operaba.",
+    "highlight": "El foco era transformar la operación en algo confiable, claro y preparado para escalar."
+  },
+  "sections": {
+    "precision": {
+      "title": "Precisión en la evaluación",
+      "p1": "El primer movimiento fue actuar directamente en el punto más crítico del campeonato. Desarrollamos una aplicación dedicada a los jueces, permitiendo votaciones desde cualquier lugar, con criterios totalmente parametrizables y adaptables a cada etapa.",
+      "p2": "El impacto fue inmediato. Hubo una ganancia en precisión, reducción de subjetividad y más agilidad en el proceso. Lo que antes era inconsistente pasó a ser estandarizado y confiable."
+    },
+    "platform": {
+      "title": "Plataforma integrada",
+      "p1": "Con la base consolidada, evolucionamos hacia una solución más amplia. Creamos una plataforma que conecta jueces, pilotos y público en un único ecosistema.",
+      "p2": "Las notas pasaron a ser exhibidas en tiempo real, con historial completo accesible. Esto elevó significativamente el nivel de transparencia y engagement del campeonato."
+    },
+    "tech": {
+      "title": "Base tecnológica sólida",
+      "p1": "El diferencial no estuvo solo en la interfaz. Toda la lógica del campeonato fue estructurada en un backoffice robusto, con reglas de negocio bien definidas y control centralizado.",
+      "p2": "Esto garantizó consistencia operativa, estabilidad y escalabilidad, incluso en momentos críticos donde las decisiones necesitan ser rápidas y seguras."
+    },
+    "result": {
+      "title": "Resultado",
+      "p1": "Hoy, Ultimate Drift se posiciona como referencia en el segmento. La tecnología dejó de ser un obstáculo y pasó a ser uno de los principales pilares del campeonato.",
+      "p2": "La experiencia se volvió más clara para los pilotos, más confiable para los jueces y mucho más envolvente para el público. En la práctica, hubo una transformación completa en la forma en que el evento es percibido."
+    }
+  },
+  "testimonials": {
+    "title": "Lo que están diciendo",
+    "description": "Feedback real de quienes viven el campeonato: pilotos, público y equipo."
+  },
+  "gallery": {
+    "title": "El campeonato en acción"
+  },
+  "mockups": {
+    "title": "La app en acción",
+    "description": "Interfaz desarrollada para ser rápida e intuitiva en cualquier dispositivo, incluso en ambientes de alta presión como la pista."
+  },
+  "technologies": {
+    "title": "Tecnologías utilizadas",
+    "description": "Stack elegido para garantizar rendimiento en tiempo real, escalabilidad y estabilidad durante los eventos."
+  },
+  "cta": {
+    "title": "¿Quiere un resultado así para su negocio?",
+    "description": "Hable con nuestro equipo y descubra cómo la tecnología puede transformar su operación.",
+    "button": "Hablar con un especialista"
+  },
+  "next": "Siguiente caso → App Silicon"
+}

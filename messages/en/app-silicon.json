@@ -1,0 +1,58 @@
+{
+    "back": "Back to Success Stories",
+    "date": "February 25, 2025",
+    "title": "Complete employee management system",
+    "subtitle": "An internal platform built by Silicon Village to simplify HR operations, unifying time tracking, attendance, payslips, invoice submission and internal communication in a single app.",
+
+    "context": {
+      "p1": "At Silicon Village, we believe technology should simplify life, not complicate it. With a distributed team of contractors, employees and interns, managing hours, documents and expenses became increasingly complex. This real need led to the creation of App Silicon.",
+      "highlight": "The goal was clear: empower the team with precise metrics and a simplified experience, turning bureaucratic tasks into fast and efficient workflows.",
+      "p2_title": "Simplified financial management",
+      "p2": "We envisioned a space where employees could manage tasks and expenses without leaving the app. Contractors and employees can log hours for different clients, detailing their day, achievements and blockers with just a few clicks.",
+      "p3_title": "Convenience in your hands",
+      "p3": "Beyond task management, Silicon allows fast invoice submission. Contractors have a dedicated NFe field, making the process direct and frictionless. Reimbursement requests can be submitted, approved or rejected directly in the app.",
+      "p4_title": "Three profiles, one platform",
+      "p4": "The app adapts to each employee contract type, delivering specific features for each profile:"
+    },
+
+    "profiles": [
+      {
+        "name": "Employee",
+        "description": "Attendance tracking, payslips, daily reports and reimbursements."
+      },
+      {
+        "name": "Contractor",
+        "description": "Time tracking, invoice submission (NFe) and project reports."
+      },
+      {
+        "name": "Intern",
+        "description": "Dedicated home screen adapted to INTERN profile."
+      }
+    ],
+
+    "featuresTitle": "System features",
+    "featuresDescription": "Everything the team needs for time tracking, documents and performance in one place.",
+
+    "features": [
+      { "title": "Time Logging", "description": "Employees and contractors log hours..." },
+      { "title": "Digital Payslips", "description": "Automated payslip generation..." },
+      { "title": "Attendance Control", "description": "Check-in and check-out tracking..." },
+      { "title": "Invoice Submission (NFe)", "description": "Contractors submit invoices..." },
+      { "title": "Reimbursement Requests", "description": "Request, approve and reject flows..." },
+      { "title": "Performance Evaluation", "description": "Periodic reviews to measure performance..." },
+      { "title": "Analytics Reports", "description": "Data on workforce costs..." },
+      { "title": "Internal Communication", "description": "Direct channel between employees and HR..." }
+    ],
+
+    "mockupsTitle": "The app in action",
+    "mockupsDescription": "Interface designed to be simple and direct, allowing any employee to use it without training.",
+
+    "techTitle": "Technologies used",
+    "techDescription": "Mobile app built in Flutter, backoffice in Angular and full infrastructure on Firebase with Cloud Functions.",
+
+    "ctaTitle": "Need a tailored solution for your team?",
+    "ctaDescription": "We build internal systems that simplify operations and empower teams with data and speed.",
+    "ctaButton": "Talk to a specialist",
+
+    "navPrev": "← Previous case: Ultimate Drift"
+}

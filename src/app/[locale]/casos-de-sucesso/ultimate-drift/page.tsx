@@ -1,9 +1,18 @@
 import UltimateDriftClient from "./UltimateDriftClient"
+import { getTranslations } from "next-intl/server"
 
-export const metadata = {
-  title: "Ultimate Drift | Case de Tecnologia | Silicon Village",
-  description:
-    "Plataforma completa para o maior campeonato de drift do Brasil com dados em tempo real, apps e backend escalável.",
+export async function generateMetadata({ params }: any) {
+  const { locale } = await params;
+
+  const t = await getTranslations({
+    locale,
+    namespace: "ultimate-drift",
+  });
+
+  return {
+    title: t("title"),
+    description: t("subtitle"),
+  };
 }
 
 export default function Page() {

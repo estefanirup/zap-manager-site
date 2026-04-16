@@ -1,0 +1,65 @@
+{
+  "back": "Back to Success Stories",
+  "date": "February 24, 2025",
+  "title": "Complete platform for Brazil's biggest drift championship",
+  "subtitle": "A digital ecosystem that connects judges, drivers and audience in real time, enhancing decision clarity and the event experience.",
+
+  "intro": {
+    "p1": "When Ultimate Drift reached out to us, the scenario was clear. The championship was growing rapidly, but the existing technology couldn't keep up. There was operational disorganization, system limitations and an urgent need to build a solid foundation capable of sustaining growth.",
+    "p2": "It was in this context that Silicon Village took on the challenge, with the goal of completely redefining how the championship operated.",
+    "highlight": "The focus was to transform operations into something reliable, clear and ready to scale."
+  },
+
+  "sections": {
+    "precision": {
+      "title": "Precision in evaluation",
+      "p1": "The first move was to act directly on the most critical point of the championship. We developed a dedicated app for judges, enabling voting from anywhere, with fully configurable criteria adaptable to each stage.",
+      "p2": "The impact was immediate. There was a gain in precision, reduced subjectivity and more agility in the process. What was once inconsistent became standardized and reliable."
+    },
+
+    "platform": {
+      "title": "Integrated platform",
+      "p1": "With the foundation consolidated, we evolved to a broader solution. We created a platform that connects judges, drivers and audience in a single ecosystem.",
+      "p2": "Scores became visible in real time, with complete accessible history. This significantly raised the level of transparency and engagement of the championship."
+    },
+
+    "tech": {
+      "title": "Solid technological foundation",
+      "p1": "The differentiator wasn't just in the interface. All championship logic was structured in a robust backoffice, with well-defined business rules and centralized control.",
+      "p2": "This ensured operational consistency, stability and scalability, even in critical moments where decisions need to be fast and secure."
+    },
+
+    "result": {
+      "title": "Result",
+      "p1": "Today, Ultimate Drift positions itself as a reference in the segment. Technology went from being an obstacle to one of the main pillars of the championship.",
+      "p2": "The experience became clearer for drivers, more reliable for judges and much more engaging for the audience. In practice, there was a complete transformation in how the event is perceived."
+    }
+  },
+
+  "testimonials": {
+    "title": "What they're saying",
+    "description": "Real feedback from those who live the championship: drivers, audience and team."
+  },
+
+  "gallery": {
+    "title": "The championship in action"
+  },
+
+  "mockups": {
+    "title": "The app in action",
+    "description": "Interface designed to be fast and intuitive on any device, even in high-pressure environments like the track."
+  },
+
+  "technologies": {
+    "title": "Technologies used",
+    "description": "Stack chosen to ensure real-time performance, scalability and stability during events."
+  },
+
+  "cta": {
+    "title": "Want results like this for your business?",
+    "description": "Talk to our team and discover how technology can transform your operation.",
+    "button": "Talk to a specialist"
+  },
+
+  "next": "Next case → App Silicon"
+}

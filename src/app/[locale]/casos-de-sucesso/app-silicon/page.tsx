@@ -1,9 +1,20 @@
 import AppSilicon from "./AppSilicon"
+import { getTranslations } from "next-intl/server"
 
-export const metadata = {
-  title: "App Silicon | Casos de Sucesso | Silicon Village",
-  description:
-    "Sistema completo de gestão de colaboradores. Lançamento de horas, holerite eletrônico, controle de ponto, envio de notas fiscais e comunicação interna.",
+export async function generateMetadata({
+  params
+}: {
+  params: { locale: string }
+}) {
+  const t = await getTranslations({
+    locale: params.locale,
+    namespace: "app-silicon"
+  })
+
+  return {
+    title: t("title"),
+    description: t("subtitle")
+  }
 }
 
 export default function Page() {

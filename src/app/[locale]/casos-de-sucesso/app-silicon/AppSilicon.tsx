@@ -8,46 +8,42 @@ import TextRevealEffect from "@/components/text-reveal-effect"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
-import * as Icons from "@/components/ui/icons";
-
-const features = [
-  { title: 'Lançamento de Horas', description: 'Colaboradores PJ e CLT registram horas...', icon: Icons.Clock },
-  { title: 'Holerite Eletrônico', description: 'Geração automatizada de contracheques...', icon: Icons.FileText },
-  { title: 'Controle de Ponto', description: 'Registro de entrada, saída...', icon: Icons.Fingerprint },
-  { title: 'Envio de Notas (NFe)', description: 'Colaboradores PJ enviam notas fiscais...', icon: Icons.Receipt },
-  { title: 'Pedidos de Reembolso', description: 'Solicitação, aprovação e rejeição...', icon: Icons.RotateCcw },
-  { title: 'Avaliação de Desempenho', description: 'Avaliações periódicas para medir performance...', icon: Icons.BarChart },
-  { title: 'Relatórios Analíticos', description: 'Dados sobre custos com pessoal...', icon: Icons.LineChart },
-  { title: 'Comunicação Interna', description: 'Canal direto entre colaboradores e RH...', icon: Icons.MessageSquare },
-]
-
-const technologies = [
-  { name: 'Flutter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg' },
-  { name: 'Angular', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
-  { name: 'Firebase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' },
-  { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
-  { name: 'Dart', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg' },
-  { name: 'Google Cloud', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg' },
-  { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
-  { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
-]
-
-const profiles = [
-  { name: 'CLT', description: 'Controle de ponto, holerites, relatório diário e reembolsos.' },
-  { name: 'PJ', description: 'Lançamento de horas, envio de notas fiscais (NFe) e relatórios por projeto.' },
-  { name: 'Estagiário', description: 'Home dedicada com funcionalidades adaptadas ao perfil INTERN.' },
-]
-
-const mockupImages = [
-  "/images/app-silicon/mockup-1.jpg",
-  "/images/app-silicon/mockup-2.jpg",
-  "/images/app-silicon/mockup-3.jpg",
-  "/images/app-silicon/mockup-4.jpg",
-]
+import * as Icons from "@/components/ui/icons"
 
 export default function AppSilicon() {
   const [lightbox, setLightbox] = useState<string | null>(null)
+
+  const t = useTranslations("app-silicon")
+
+  const features = t.raw("features") as {
+    title: string
+    description: string
+  }[]
+
+  const profiles = t.raw("profiles") as {
+    name: string
+    description: string
+  }[]
+
+  const technologies = [
+    { name: 'Flutter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg' },
+    { name: 'Angular', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
+    { name: 'Firebase', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' },
+    { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+    { name: 'Dart', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg' },
+    { name: 'Google Cloud', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg' },
+    { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+    { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+  ]
+
+  const mockupImages = [
+    "/images/app-silicon/mockup-1.jpg",
+    "/images/app-silicon/mockup-2.jpg",
+    "/images/app-silicon/mockup-3.jpg",
+    "/images/app-silicon/mockup-4.jpg",
+  ]
 
   return (
     <div className="px-4 xl:px-0 max-w-5xl mx-auto space-y-20 sm:space-y-24 md:space-y-32 scroll-smooth">
@@ -61,59 +57,53 @@ export default function AppSilicon() {
             className="inline-flex items-center gap-2 text-sm text-primary mb-8 hover:opacity-80 transition-all"
           >
             <Icons.ArrowLeft className="w-4 h-4" />
-            Voltar para Casos de Sucesso
+            {t("back")}
           </Link>
 
-          <p className="text-xs text-foreground mb-4">25 de fevereiro de 2025</p>
+          <p className="text-xs text-foreground mb-4">{t("date")}</p>
 
           <h1 className="text-3xl md:text-5xl font-medium leading-tight tracking-tight whitespace-pre-line">
             <TextRevealEffect>
-              {"Sistema completo de gestão de colaboradores"}
+              {t("title")}
             </TextRevealEffect>
           </h1>
 
           <p className="mt-6 text-base md:text-lg text-foreground/70 max-w-2xl leading-relaxed">
-            Uma plataforma desenvolvida internamente pela Silicon Village para
-            <span className="text-foreground font-medium"> simplificar a administração de RH</span>,
-            unificando lançamento de horas, controle de ponto, holerites, envio de notas fiscais e comunicação interna em um único app.
+            {t("subtitle")}
           </p>
 
-          {/* CONTEXTO */}
           <div className="mt-16 space-y-12 max-w-2xl text-[15px] md:text-[17px] leading-[1.75] text-foreground/80">
 
-            <p>
-              Na Silicon Village, acreditamos que a tecnologia deve simplificar a vida, não complicá-la. Com uma equipe distribuída entre colaboradores CLT, PJ e estagiários, gerenciar horas, documentos e despesas se tornava cada vez mais complexo. Foi com essa necessidade real que nasceu o App Silicon.
-            </p>
+            <p>{t("context.p1")}</p>
 
             <div className="border-l-2 border-primary pl-4 py-3 bg-primary/5 rounded-r-md">
               <p className="text-foreground/90">
-                O objetivo era claro: <strong>empoderar a equipe com métricas precisas e um uso simplificado</strong>, transformando tarefas burocráticas em experiências rápidas e eficientes.
+                {t("context.highlight")}
               </p>
             </div>
 
             <div>
-              <h2 className="text-xl md:text-2xl font-semibold mb-2">Gestão financeira descomplicada</h2>
-              <p>
-                Imaginamos um espaço onde o colaborador pudesse gerenciar suas atividades e despesas sem sair do app. Colaboradores PJ e CLT têm a liberdade de lançar horas para diferentes clientes, detalhando como foi o dia, conquistas e impedimentos, tudo com alguns cliques.
-              </p>
+              <h2 className="text-xl md:text-2xl font-semibold mb-2">
+                {t("context.p2_title")}
+              </h2>
+              <p>{t("context.p2")}</p>
             </div>
 
             <div>
-              <h2 className="text-xl md:text-2xl font-semibold mb-2">Facilidade na palma da mão</h2>
-              <p>
-                Além de gerenciar atividades, o Silicon permite envio de notas fiscais de despesas rapidamente. Colaboradores PJ têm um campo dedicado para envio de NFe, tornando o processo direto e sem atrito. Pedidos de reembolso podem ser feitos, aprovados ou rejeitados diretamente no app, com possibilidade de refazer requisições.
-              </p>
+              <h2 className="text-xl md:text-2xl font-semibold mb-2">
+                {t("context.p3_title")}
+              </h2>
+              <p>{t("context.p3")}</p>
             </div>
 
             <div>
-              <h2 className="text-xl md:text-2xl font-semibold mb-2">Três perfis, uma plataforma</h2>
-              <p>
-                O app se adapta ao tipo de contrato do colaborador, entregando funcionalidades específicas para cada perfil:
-              </p>
+              <h2 className="text-xl md:text-2xl font-semibold mb-2">
+                {t("context.p4_title")}
+              </h2>
+              <p>{t("context.p4")}</p>
             </div>
           </div>
 
-          {/* PERFIS */}
           <SlideEffect>
             <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
               {profiles.map((profile, index) => (
@@ -125,50 +115,57 @@ export default function AppSilicon() {
             </div>
           </SlideEffect>
 
-          {/* FUNCIONALIDADES */}
           <section className="mt-20">
             <SlideEffect>
               <h2 className="text-xl md:text-2xl font-semibold text-center mb-3">
-                Funcionalidades do sistema
+                {t("featuresTitle")}
               </h2>
               <p className="text-sm text-foreground/60 text-center mb-10 max-w-lg mx-auto">
-                Tudo o que a equipe precisa para gestão de horas, documentos e desempenho em um só lugar.
+                {t("featuresDescription")}
               </p>
             </SlideEffect>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {features.map((feature, index) => (
-                <SlideEffect key={index} direction="top" delay={index * 0.05} isSpring={false}>
-                  <div className="rounded-2xl bg-secondary p-6 space-y-3 h-full">
-                    <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center">
-                      <feature.icon className="w-5 h-5 text-primary" />
+              {features.map((feature, index) => {
+                const Icon = [
+                  Icons.Clock,
+                  Icons.FileText,
+                  Icons.Fingerprint,
+                  Icons.Receipt,
+                  Icons.RotateCcw,
+                  Icons.BarChart,
+                  Icons.LineChart,
+                  Icons.MessageSquare
+                ][index]
+
+                return (
+                  <SlideEffect key={index} direction="top" delay={index * 0.05} isSpring={false}>
+                    <div className="rounded-2xl bg-secondary p-6 space-y-3 h-full">
+                      <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center">
+                        <Icon className="w-5 h-5 text-primary" />
+                      </div>
+                      <p className="text-black font-medium">{feature.title}</p>
+                      <p className="text-sm text-foreground/70">{feature.description}</p>
                     </div>
-                    <p className="text-black font-medium">{feature.title}</p>
-                    <p className="text-sm text-foreground/70">{feature.description}</p>
-                  </div>
-                </SlideEffect>
-              ))}
+                  </SlideEffect>
+                )
+              })}
             </div>
           </section>
 
-          {/* MOCKUPS */}
           <section className="mt-24">
             <SlideEffect>
               <h2 className="text-xl md:text-2xl font-semibold text-center mb-3">
-                O app em ação
+                {t("mockupsTitle")}
               </h2>
               <p className="text-sm text-foreground/60 text-center mb-10 max-w-lg mx-auto">
-                Interface pensada para ser simples e direta, permitindo que qualquer colaborador use sem treinamento.
+                {t("mockupsDescription")}
               </p>
             </SlideEffect>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {mockupImages.map((src, i) => (
-                <div
-                  key={i}
-                  className="cursor-pointer"
-                  onClick={() => setLightbox(src)}
-                >
+                <div key={i} onClick={() => setLightbox(src)} className="cursor-pointer">
                   <Image
                     src={src}
                     alt={`Tela do app ${i + 1}`}
@@ -181,14 +178,13 @@ export default function AppSilicon() {
             </div>
           </section>
 
-          {/* TECNOLOGIAS */}
           <section className="mt-24">
             <SlideEffect>
               <h2 className="text-xl md:text-2xl font-semibold text-center mb-3">
-                Tecnologias utilizadas
+                {t("techTitle")}
               </h2>
               <p className="text-sm text-foreground/60 text-center mb-10 max-w-lg mx-auto">
-                App mobile em Flutter, backoffice em Angular e infraestrutura completa no Firebase com Cloud Functions.
+                {t("techDescription")}
               </p>
             </SlideEffect>
 
@@ -199,11 +195,7 @@ export default function AppSilicon() {
                     key={index}
                     className="group flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-white/80 backdrop-blur-sm border border-border hover:border-primary/30 hover:shadow-md transition-all duration-300"
                   >
-                    <img
-                      src={tech.icon}
-                      alt={tech.name}
-                      className="h-5 w-5 object-contain"
-                    />
+                    <img src={tech.icon} alt={tech.name} className="h-5 w-5 object-contain" />
                     <span className="text-sm font-medium text-black/70 group-hover:text-black transition-colors">
                       {tech.name}
                     </span>
@@ -213,57 +205,36 @@ export default function AppSilicon() {
             </SlideEffect>
           </section>
 
-          {/* LIGHTBOX */}
           {lightbox && (
-            <>
-              <style>{`[class*="from-transparent"] { display: none !important; }`}</style>
-              <div
-                className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
+            <div
+              className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
+              onClick={() => setLightbox(null)}
+            >
+              <button
                 onClick={() => setLightbox(null)}
+                className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white text-black flex items-center justify-center"
               >
-                <button
-                  onClick={() => setLightbox(null)}
-                  className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white text-black flex items-center justify-center text-lg font-medium shadow-lg hover:bg-gray-100 transition z-10"
-                >
-                  ✕
-                </button>
-                <div
-                  className="relative overflow-auto max-h-[90vh] max-w-[90vw]"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <img
-                    src={lightbox}
-                    alt="Mockup ampliado"
-                    className="max-h-[85vh] w-auto object-contain rounded-2xl cursor-zoom-in"
-                    onClick={(e) => {
-                      const img = e.currentTarget
-                      if (img.style.maxHeight === 'none') {
-                        img.style.maxHeight = '85vh'
-                        img.style.cursor = 'zoom-in'
-                      } else {
-                        img.style.maxHeight = 'none'
-                        img.style.cursor = 'zoom-out'
-                      }
-                    }}
-                  />
-                </div>
-              </div>
-            </>
+                ✕
+              </button>
+              <img
+                src={lightbox}
+                className="max-h-[85vh] w-auto object-contain rounded-2xl"
+              />
+            </div>
           )}
 
-          {/* CTA + NAVEGAÇÃO */}
           <div className="mt-20 space-y-10">
             <SlideEffect>
               <div className="text-center space-y-4">
                 <h2 className="text-xl md:text-2xl font-semibold">
-                  Precisa de uma solução sob medida para sua equipe?
+                  {t("ctaTitle")}
                 </h2>
                 <p className="text-sm text-foreground/60 max-w-md mx-auto">
-                  Desenvolvemos sistemas internos que simplificam a operação e empoderam sua equipe com dados e agilidade.
+                  {t("ctaDescription")}
                 </p>
-                <Link href="https://wa.me/5511943820623" target="_blank" rel="noopener noreferrer">
+                <Link href="https://wa.me/5511943820623" target="_blank">
                   <Button size="lg" className="mt-4">
-                    Falar com especialista
+                    {t("ctaButton")}
                     <Icons.ArrowRight className="w-4 h-4" />
                   </Button>
                 </Link>
@@ -271,11 +242,8 @@ export default function AppSilicon() {
             </SlideEffect>
 
             <div className="pt-8 border-t border-border">
-              <Link
-                href="/casos-de-sucesso/ultimate-drift"
-                className="text-primary hover:opacity-70 transition text-sm"
-              >
-                ← Case anterior: Ultimate Drift
+              <Link href="/casos-de-sucesso/ultimate-drift" className="text-primary text-sm">
+                {t("navPrev")}
               </Link>
             </div>
           </div>

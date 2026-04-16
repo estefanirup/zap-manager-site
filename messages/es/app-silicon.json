@@ -1,0 +1,58 @@
+{
+    "back": "Volver a Casos de Éxito",
+    "date": "25 de febrero de 2025",
+    "title": "Sistema completo de gestión de colaboradores",
+    "subtitle": "Una plataforma desarrollada internamente por Silicon Village para simplificar la gestión de RRHH, unificando registro de horas, control de asistencia, recibos de sueldo, envío de facturas y comunicación interna en una sola app.",
+
+    "context": {
+      "p1": "En Silicon Village creemos que la tecnología debe simplificar la vida, no complicarla. Con un equipo distribuido entre empleados, contratistas y becarios, gestionar horas, documentos y gastos se volvió cada vez más complejo. Esta necesidad real dio origen al App Silicon.",
+      "highlight": "El objetivo era claro: empoderar al equipo con métricas precisas y una experiencia simplificada, transformando tareas burocráticas en procesos rápidos y eficientes.",
+      "p2_title": "Gestión financiera simplificada",
+      "p2": "Imaginamos un espacio donde el colaborador pudiera gestionar tareas y gastos sin salir de la app. Empleados y contratistas pueden registrar horas para distintos clientes con detalles del día, logros y bloqueos.",
+      "p3_title": "Facilidad en la palma de la mano",
+      "p3": "Además de la gestión de tareas, Silicon permite el envío rápido de facturas. Los contratistas cuentan con un campo dedicado para NFe, haciendo el proceso directo y sin fricción. Las solicitudes de reembolso pueden ser enviadas, aprobadas o rechazadas directamente en la app.",
+      "p4_title": "Tres perfiles, una plataforma",
+      "p4": "La app se adapta al tipo de contrato del colaborador, ofreciendo funcionalidades específicas para cada perfil:"
+    },
+
+    "profiles": [
+      {
+        "name": "Empleado",
+        "description": "Control de asistencia, recibos de sueldo, reportes diarios y reembolsos."
+      },
+      {
+        "name": "Contratista",
+        "description": "Registro de horas, envío de facturas (NFe) y reportes por proyecto."
+      },
+      {
+        "name": "Becario",
+        "description": "Pantalla de inicio adaptada al perfil INTERN."
+      }
+    ],
+
+    "featuresTitle": "Funcionalidades del sistema",
+    "featuresDescription": "Todo lo que el equipo necesita para gestión de horas, documentos y desempeño en un solo lugar.",
+
+    "features": [
+      { "title": "Registro de Horas", "description": "Empleados y contratistas registran horas..." },
+      { "title": "Recibos Digitales", "description": "Generación automática de recibos..." },
+      { "title": "Control de Asistencia", "description": "Registro de entrada y salida..." },
+      { "title": "Envío de Facturas (NFe)", "description": "Contratistas envían facturas..." },
+      { "title": "Solicitudes de Reembolso", "description": "Flujos de solicitud, aprobación y rechazo..." },
+      { "title": "Evaluación de Desempeño", "description": "Evaluaciones periódicas..." },
+      { "title": "Reportes Analíticos", "description": "Datos sobre costos de personal..." },
+      { "title": "Comunicación Interna", "description": "Canal directo con RRHH..." }
+    ],
+
+    "mockupsTitle": "La app en acción",
+    "mockupsDescription": "Interfaz diseñada para ser simple y directa, sin necesidad de entrenamiento.",
+
+    "techTitle": "Tecnologías utilizadas",
+    "techDescription": "App móvil en Flutter, backoffice en Angular e infraestructura completa en Firebase con Cloud Functions.",
+
+    "ctaTitle": "¿Necesitas una solución a medida?",
+    "ctaDescription": "Desarrollamos sistemas internos que simplifican operaciones y potencian equipos con datos y agilidad.",
+    "ctaButton": "Hablar con un especialista",
+
+    "navPrev": "← Caso anterior: Ultimate Drift"
+}
