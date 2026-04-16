@@ -7,50 +7,57 @@
 
   "context": {
     "p1": "Na Silicon Village, acreditamos que a tecnologia deve simplificar a vida, não complicá-la. Com uma equipe distribuída entre colaboradores CLT, PJ e estagiários, gerenciar horas, documentos e despesas se tornava cada vez mais complexo. Foi com essa necessidade real que nasceu o App Silicon.",
-    "highlight": "O objetivo era claro: empoderar a equipe com métricas precisas e um uso simplificado, transformando tarefas burocráticas em experiências rápidas e eficientes."
+
+    "highlight": "O objetivo era claro: empoderar a equipe com métricas precisas e um uso simplificado, transformando tarefas burocráticas em experiências rápidas e eficientes.",
+
+    "p2_title": "Gestão financeira descomplicada",
+    "p2": "Imaginamos um espaço onde o colaborador pudesse gerenciar suas atividades e despesas sem sair do app. Colaboradores PJ e CLT têm a liberdade de lançar horas para diferentes clientes, detalhando como foi o dia, conquistas e impedimentos, tudo com alguns cliques.",
+
+    "p3_title": "Facilidade na palma da mão",
+    "p3": "Além de gerenciar atividades, o Silicon permite envio de notas fiscais de despesas rapidamente. Colaboradores PJ têm um campo dedicado para envio de NFe, tornando o processo direto e sem atrito. Pedidos de reembolso podem ser feitos, aprovados ou rejeitados diretamente no app, com possibilidade de refazer requisições.",
+
+    "p4_title": "Três perfis, uma plataforma",
+    "p4": "O app se adapta ao tipo de contrato do colaborador, entregando funcionalidades específicas para cada perfil:"
   },
 
-  "sections": {
-    "financial": {
-      "title": "Gestão financeira descomplicada",
-      "text": "Imaginamos um espaço onde o colaborador pudesse gerenciar suas atividades e despesas sem sair do app. Colaboradores PJ e CLT têm a liberdade de lançar horas para diferentes clientes, detalhando como foi o dia, conquistas e impedimentos, tudo com alguns cliques."
+  "profiles": [
+    {
+      "name": "CLT",
+      "description": "Controle de ponto, holerites, relatórios diários e reembolsos."
     },
-
-    "ease": {
-      "title": "Facilidade na palma da mão",
-      "text": "Além de gerenciar atividades, o Silicon permite envio de notas fiscais de despesas rapidamente. Colaboradores PJ têm um campo dedicado para envio de NFe, tornando o processo direto e sem atrito. Pedidos de reembolso podem ser feitos, aprovados ou rejeitados diretamente no app, com possibilidade de refazer requisições."
+    {
+      "name": "PJ",
+      "description": "Registro de horas, envio de notas fiscais (NFe) e relatórios por projeto."
     },
-
-    "profiles": {
-      "title": "Três perfis, uma plataforma",
-      "text": "O app se adapta ao tipo de contrato do colaborador, entregando funcionalidades específicas para cada perfil:"
+    {
+      "name": "Estagiário",
+      "description": "Interface simplificada adaptada ao perfil de aprendizado."
     }
-  },
+  ],
 
-  "features": {
-    "title": "Funcionalidades do sistema",
-    "description": "Tudo o que a equipe precisa para gestão de horas, documentos e desempenho em um só lugar."
-  },
+  "featuresTitle": "Funcionalidades do sistema",
+  "featuresDescription": "Tudo o que a equipe precisa para gestão de horas, documentos e desempenho em um só lugar.",
 
-  "mockups": {
-    "title": "O app em ação",
-    "description": "Interface pensada para ser simples e direta, permitindo que qualquer colaborador use sem treinamento."
-  },
+  "features": [
+    { "title": "Registro de Horas", "description": "Colaboradores registram horas por projeto..." },
+    { "title": "Recibos Digitais", "description": "Geração automática de holerites..." },
+    { "title": "Controle de Ponto", "description": "Registro de entrada e saída simplificado..." },
+    { "title": "Envio de Notas Fiscais (NFe)", "description": "PJ envia notas diretamente pelo app..." },
+    { "title": "Solicitações de Reembolso", "description": "Fluxo completo de aprovação e rejeição..." },
+    { "title": "Avaliação de Desempenho", "description": "Avaliações periódicas automatizadas..." },
+    { "title": "Relatórios Analíticos", "description": "Dados sobre custos e produtividade..." },
+    { "title": "Comunicação Interna", "description": "Canal direto com equipe de RH..." }
+  ],
 
-  "tech": {
-    "title": "Tecnologias utilizadas",
-    "description": "App mobile em Flutter, backoffice em Angular e infraestrutura completa no Firebase com Cloud Functions."
-  },
+  "mockupsTitle": "O app em ação",
+  "mockupsDescription": "Interface pensada para ser simples e direta, permitindo que qualquer colaborador use sem treinamento.",
 
-  "cta": {
-    "title": "Precisa de uma solução sob medida para sua equipe?",
-    "description": "Desenvolvemos sistemas internos que simplificam a operação e empoderam sua equipe com dados e agilidade.",
-    "button": "Falar com especialista"
-  },
+  "techTitle": "Tecnologias utilizadas",
+  "techDescription": "App mobile em Flutter, backoffice em Angular e infraestrutura completa no Firebase com Cloud Functions.",
 
-  "navigation": {
-    "previous": "Case anterior: Ultimate Drift"
-  }
-  
+  "ctaTitle": "Precisa de uma solução sob medida para sua equipe?",
+  "ctaDescription": "Desenvolvemos sistemas internos que simplificam a operação e empoderam sua equipe com dados e agilidade.",
+  "ctaButton": "Falar com especialista",
+
+  "navPrev": "← Caso anterior: Ultimate Drift"
 }
-
