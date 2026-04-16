@@ -76,7 +76,7 @@ export default function HomeHero() {
 
             {/* CTA externo */}
             <a
-              href="https://wa.me/5511943820623"
+              href="https://wa.me/5511916329680"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full"

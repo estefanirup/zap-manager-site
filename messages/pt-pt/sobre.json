@@ -1,0 +1,64 @@
+{
+  "title": "A Nossa História",
+  "history": {
+    "p1": "A Silicon Village começou a ganhar vida de forma orgânica e colaborativa em 2016. Após se mudar para São Paulo, o fundador Jeferson Guardezi foi viver numa charmosa vila residencial composta por oito casas. À medida que formava equipas e trazia novos talentos para trabalhar em projetos de tecnologia, esses profissionais acabaram por se mudar para lá, chegando a ocupar cerca de seis das casas da vila.",
+    "p2": "Este ambiente de proximidade, inovação e colaboração fez com que o local fosse carinhosamente apelidado de \"Vila do Silício\" ou \"Silicon Village\", nome que inspirou e batizou oficialmente a empresa na sua fundação, no ano de 2019.",
+    "p3": "Desde o início das suas operações, a Silicon Village apresentou um crescimento acelerado, conseguindo duplicar de tamanho ano após ano. O grande motor deste sucesso é a nossa forte aposta no potencial humano, procurando talentos promissores em instituições de excelência, como a UTFPR.",
+    "p4": "Consolidámos uma cultura de empoderamento, onde acreditamos que a vontade de aprender e a proatividade são os maiores diferenciais para a construção de soluções excecionais.",
+    "p5": "As nossas maiores conquistas vão além dos números, refletindo-se diretamente na excelência técnica e no desenvolvimento contínuo da nossa equipa. Um marco importante na nossa trajetória foi o reconhecimento da qualidade de entrega com a obtenção do selo Partner Select da AWS.",
+    "p6": "Além disso, investimos na evolução académica dos nossos talentos, financiando formações como MBAs. Celebramos profundamente cada história de sucesso, vendo profissionais que construíram as suas bases connosco alcançarem carreiras brilhantes e reconhecimento."
+  },
+  "team": "A Nossa Equipa",
+  "mission": {
+    "title": "Missão",
+    "content": "Transformar potencial humano e incerteza tecnológica em valor real, atuando como a ponte que liga engenharia de excelência a desafios complexos de negócio, garantindo o crescimento contínuo de clientes e colaboradores."
+  },
+  "vision": {
+    "title": "Visão",
+    "content": "Ser um polo de engenharia e inovação onde pessoas extraordinárias constroem tecnologia extraordinária. Tornar-nos referência internacional em soluções digitais e Inteligência Artificial, unindo excelência técnica, desenvolvimento humano e impacto real nos negócios."
+  },
+  "values": {
+    "title": "Valores",
+    "items": {
+      "excellence": {
+        "title": "EXCELÊNCIA TÉCNICA INEGOCIÁVEL",
+        "description": "Na Silicon, os líderes não aceitam entregas \"mais ou menos\". Entendemos que velocidade sem engenharia é apenas desorganização acelerada. Unimos a teoria robusta da universidade com a prática do mercado para garantir que o código, a arquitetura e a solução sejam estruturalmente sólidos. Não seguimos atalhos que comprometam a qualidade; revemos o trabalho com rigor e garantimos que tudo o que sai da empresa mantém o nosso padrão de excelência."
+      },
+      "leadership": {
+        "title": "TRANSFORMAR POTENCIAL EM LIDERANÇA",
+        "description": "Somos obcecados pelo crescimento das pessoas. Atuamos como a ponte entre o talento bruto (universidade) e o mercado de alta performance. Aqui, os líderes não apenas gerem; ensinam, orientam e criam um ambiente onde estagiários evoluem anos em poucos meses. O sucesso mede-se quando ex-colaboradores afirmam que foi aqui que \"realmente aprenderam e cresceram\". Investimos nas pessoas, não descartamos talento e celebramos cada vitória individual."
+      },
+      "simplicity": {
+        "title": "SIMPLICIDADE RESOLUTIVA",
+        "description": "A complexidade é o imposto da preguiça intelectual. Procuramos a \"simplicidade inteligente\": simplificar o que pode ser simples e deixar complexo apenas o inevitável. Eliminamos burocracia desnecessária e focamos em desbloquear valor. Transformamos problemas complexos de clientes em soluções tecnológicas simples, rápidas e funcionais."
+      },
+      "transparency": {
+        "title": "TRANSPARÊNCIA RADICAL (SEM DRAMA)",
+        "description": "Os problemas só se tornam maiores quando são escondidos. Na Silicon, a integridade sustenta todos os outros valores. Comunicamos más notícias cedo, de forma objetiva e sem floreados, para corrigir rapidamente. Atuamos com ética e verdade, mesmo quando é desconfortável, garantindo confiança como base da nossa velocidade."
+      },
+      "ego": {
+        "title": "EGO BAIXO, IMPACTO ALTO",
+        "description": "O protagonismo é coletivo. Não importa quem resolveu, importa que o problema foi resolvido. Rejeitamos comportamentos de \"estrela\" que colocam o interesse individual acima da equipa. Trabalhamos com humildade, sabendo que talento sem colaboração destrói cultura."
+      },
+      "frugality": {
+        "title": "FRUGALIDADE (FAZER MAIS COM MENOS)",
+        "description": "Fazemos mais com menos recursos. Entendemos que restrições não são bloqueios, mas sim combustível para a engenhosidade. Não há mérito em aumentar orçamento ou equipa sem aumentar eficiência. Eliminamos desperdício e valorizamos a capacidade de resolver rapidamente com as ferramentas certas."
+      },
+      "knowledge": {
+        "title": "CONHECIMENTO É COMO UM COPO DE ÁGUA",
+        "description": "Na Silicon, conhecimento é como um copo de água: não se nega a ninguém. Valorizamos a partilha de conhecimento como motor de crescimento. Aqui, a curiosidade é uma ferramenta de trabalho obrigatória e o acesso à informação é livre."
+      }
+    }
+  },
+  "international": {
+    "title": "Presença Internacional",
+    "p1": "O talento que cultivamos não tem fronteiras, e a nossa capacidade de expansão global já é uma realidade sólida e implementada. Ao longo da nossa trajetória, cruzámos as fronteiras do Brasil e estruturámos formalmente a nossa presença internacional com a constituição de empresas nos Estados Unidos e em Portugal.",
+    "p2": "Esta infraestrutura internacional já existente permite não apenas atestar a qualidade global da nossa engenharia de software, mas também conectar os nossos talentos a um ecossistema mundial de inovação.",
+    "locations": {
+      "pr": { "city": "Medianeira, PR", "role": "Sede & Engenharia" },
+      "sp": { "city": "São Paulo, SP", "role": "Operações Comerciais" },
+      "us": { "city": "Miami, EUA", "role": "Operações Internacionais" },
+      "pt": { "city": "Portugal", "role": "Presença Europeia" }
+    }
+  }
+}

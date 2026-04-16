@@ -1,12 +1,16 @@
 {
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "cases": "Cases",
-    "about": "About Us",
-    "contact": "Contact",
-    "cta": "Book a consultation"
-  },
+  "home": "Home",
+  "services": "Services",
+  "clients": "Clients",
+  "cases": "Cases",
+  "about": "About Us",
+  "contact": "Contact",
+  "features": "Solution",
+  "pricing": "Pricing",
+  "faq": "FAQ",
+  "cta": "Book a consultation"
+},
   "home": {
     "headline": "Technology that transforms.",
     "subheadline": "We are specialists in technological innovation with over 20 years of experience. We develop digital products, AI solutions and cloud infrastructure for companies that demand performance, security and results.",

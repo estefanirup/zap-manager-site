@@ -1,12 +1,16 @@
 {
   "nav": {
-    "home": "Inicio",
-    "services": "Servicios",
-    "cases": "Casos",
-    "about": "Sobre Nosotros",
-    "contact": "Contacto",
-    "cta": "Agendar consulta"
-  },
+  "home": "Inicio",
+  "services": "Servicios",
+  "clients": "Clientes",
+  "cases": "Casos",
+  "about": "Sobre Nosotros",
+  "contact": "Contacto",
+  "features": "Solución",
+  "pricing": "Planes",
+  "faq": "Preguntas",
+  "cta": "Agendar consulta"
+},
   "home": {
     "headline": "Tecnología que transforma.",
     "subheadline": "Somos especialistas en innovación tecnológica con más de 20 años de mercado. Desarrollamos productos digitales, soluciones de IA e infraestructura en la nube para empresas que exigen rendimiento, seguridad y resultados.",

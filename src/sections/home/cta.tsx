@@ -22,7 +22,7 @@ export default function CTA() {
 
       <SlideEffect>
         <a
-          href="https://wa.me/5511943820623"
+          href="https://wa.me/5511916329680"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -1,0 +1,163 @@
+{
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "clients": "Clientes",
+    "cases": "Casos de estudo",
+    "about": "Sobre nós",
+    "contact": "Contacto",
+    "features": "Solução",
+    "pricing": "Planos",
+    "faq": "Dúvidas",
+    "cta": "Agendar diagnóstico"
+  },
+
+  "home": {
+    "headline": "Tecnologia que transforma.",
+    "subheadline": "Somos especialistas em inovação tecnológica com mais de 20 anos de mercado. Desenvolvemos produtos digitais, soluções de IA e infraestrutura cloud para empresas que exigem performance, segurança e resultados.",
+    "mainCTA": "Conheça os nossos serviços",
+    "secondaryCTA": "Falar com especialista",
+    "stats": {
+      "years": "+20",
+      "yearsLabel": "anos de mercado",
+      "countries": "3",
+      "countriesLabel": "países de atuação",
+      "aws": "AWS",
+      "awsLabel": "Parceiro oficial"
+    }
+  },
+
+  "services": {
+    "title": "Os nossos serviços",
+    "description": "Soluções completas de tecnologia para empresas que precisam de performance, segurança e inovação.",
+
+    "digitalCore": {
+      "title": "Digital Core",
+      "content": "Sustentação e evolução contínua de sistemas. Alocamos equipas dedicadas para manter legados e acelerar novas entregas com estabilidade tecnológica."
+    },
+
+    "atendimento": {
+      "title": "Gestão de Atendimento com IA",
+      "content": "Centralize WhatsApp, Instagram e todos os seus canais num painel inteligente com agentes de IA, automação e métricas em tempo real.",
+      "badge": "novo"
+    },
+
+    "ventureBuilding": {
+      "title": "Venture Building",
+      "content": "Cocriação de novos negócios. Investimos no desenvolvimento tecnológico em troca de participação, partilhando risco e sucesso."
+    },
+
+    "squadAI": {
+      "title": "Squad AI",
+      "content": "Entrega acelerada baseada em IA com modelo de valor mensal fixo. Cuidamos de toda engenharia e arquitetura, com foco em velocidade e previsibilidade."
+    },
+
+    "consultoria": {
+      "title": "Consultoria Especializada",
+      "content": "Atuação estratégica, tática e operacional com foco em inovação, transformação digital, arquitetura e agilidade."
+    },
+
+    "outsourcing": {
+      "title": "Outsourcing Estratégico",
+      "content": "Alocação de profissionais e equipas de alta performance com governança, produtividade e rápida integração ao seu time."
+    },
+
+    "learnMore": "Saber mais"
+  },
+
+  "clients": {
+    "title": "Quem confia na Silicon Village",
+    "partner": {
+      "label": "Parceiro oficial",
+      "description": "Infraestrutura, segurança e escalabilidade com o suporte da maior plataforma de cloud do mundo."
+    }
+  },
+
+  "cases": {
+    "title": "Casos de Sucesso",
+    "listDescription": "Projetos reais que demonstram como a Silicon Village transforma desafios em soluções de tecnologia que geram resultado.",
+
+    "drift": {
+      "title": "Ultimate Drift",
+      "description": "Como a tecnologia transformou o maior campeonato de drift do Brasil. App para juízes, pilotos e público com notas em tempo real e histórico ao vivo.",
+      "date": "24 de fevereiro de 2025"
+    },
+
+    "silicon": {
+      "title": "App Silicon",
+      "description": "Plataforma interna completa para gestão financeira, registo de horas e envio de documentos. Simplificando o dia a dia dos colaboradores.",
+      "date": "25 de fevereiro de 2025"
+    },
+
+    "readMore": "Ler caso completo",
+    "back": "Voltar para Casos de Sucesso",
+    "nextCase": "Próximo caso",
+    "prevCase": "Caso anterior"
+  },
+
+  "about": {
+    "title": "A nossa história",
+    "history": {
+      "p1": "A Silicon Village começou a ganhar vida de forma orgânica e colaborativa em 2016. Após se mudar para São Paulo, o fundador Jeferson Guardezi foi viver numa vila residencial composta por oito casas. Conforme formava equipas e trazia novos talentos para trabalhar em projetos de tecnologia, esses profissionais acabaram por se mudar para lá, chegando a ocupar cerca de seis das casas da vila.",
+      "p2": "Esse ambiente de proximidade, inovação e colaboração fez com que o local fosse carinhosamente apelidado de \"Vila do Silício\" ou \"Silicon Village\", nome que inspirou e batizou oficialmente a empresa na sua fundação, em 2019.",
+      "p3": "Desde o início das suas operações, a Silicon Village apresentou um crescimento acelerado, conseguindo duplicar de tamanho ano após ano. O grande motor desse sucesso é a forte aposta no potencial humano, procurando talentos promissores em instituições de excelência, como a UTFPR.",
+      "p4": "Consolidamos uma cultura de empoderamento, onde acreditamos que a vontade de aprender e a proatividade são os maiores diferenciais para a construção de soluções excecionais.",
+      "p5": "As nossas maiores conquistas vão além dos números, refletindo-se diretamente na excelência técnica e no desenvolvimento contínuo da equipa. Um marco importante na nossa trajetória foi o reconhecimento da qualidade de entrega com a obtenção do selo AWS Partner Select.",
+      "p6": "Além disso, investimos na evolução académica dos nossos talentos, financiando formações como MBAs. Celebramos profundamente cada história de sucesso, vendo profissionais que cresceram connosco conquistarem carreiras brilhantes e reconhecimento."
+    },
+
+    "team": "A nossa equipa",
+
+    "mission": {
+      "title": "Missão",
+      "content": "Transformar potencial humano e incerteza tecnológica em valor real, atuando como a ponte que liga engenharia de excelência a desafios complexos de negócio, garantindo o crescimento contínuo de clientes e colaboradores."
+    },
+
+    "vision": {
+      "title": "Visão",
+      "content": "Ser um polo de engenharia e inovação onde pessoas extraordinárias constroem tecnologia extraordinária. Tornar-se referência internacional em soluções digitais e Inteligência Artificial, unindo excelência técnica, desenvolvimento humano e impacto real nos negócios."
+    },
+
+    "values": {
+      "title": "Valores",
+      "items": {
+        "excellence": "EXCELÊNCIA TÉCNICA INEGOCIÁVEL",
+        "leadership": "TRANSFORMAR POTENCIAL EM LIDERANÇA",
+        "simplicity": "SIMPLICIDADE QUE RESOLVE",
+        "transparency": "TRANSPARÊNCIA RADICAL (SEM DRAMA)",
+        "ego": "EGO BAIXO, IMPACTO ALTO",
+        "frugality": "FRUGALIDADE (FAZER MAIS COM MENOS)",
+        "knowledge": "CONHECIMENTO É COMO UM COPO DE ÁGUA"
+      }
+    },
+
+    "international": {
+      "title": "Presença Internacional",
+      "p1": "O talento que cultivamos não tem fronteiras, e a nossa capacidade de expansão global já é uma realidade sólida. Ao longo da nossa trajetória, cruzámos fronteiras e estruturámos formalmente a nossa presença internacional com empresas nos Estados Unidos e em Portugal.",
+      "p2": "Esta infraestrutura internacional permite não apenas validar a qualidade global da nossa engenharia de software, mas também ligar os nossos talentos a um ecossistema mundial de inovação.",
+
+      "locations": {
+        "pr": { "city": "Medianeira, PR", "role": "Sede & Engenharia" },
+        "sp": { "city": "São Paulo, SP", "role": "Operações Comerciais" },
+        "us": { "city": "Miami, EUA", "role": "Operações Internacionais" },
+        "pt": { "city": "Portugal", "role": "Presença Europeia" }
+      }
+    }
+  },
+
+  "cta": {
+    "title": "Tem um projeto em mente?",
+    "description": "Estamos prontos para transformar as suas ideias em soluções digitais inovadoras. Fale com a nossa equipa.",
+    "button": "Agendar reunião"
+  },
+
+  "footer": {
+    "services": "Serviços",
+    "about": "Sobre nós",
+    "contact": "Contacto",
+    "cases": "Casos de sucesso",
+    "schedule": "Agendar reunião",
+    "company": "Silicon Village Innovation",
+    "copyright": "© 2026 Silicon Village Innovation. Todos os direitos reservados."
+  }
+}

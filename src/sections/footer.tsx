@@ -7,7 +7,7 @@ const settings = {
   socialMedia: [
     { title: 'LinkedIn', icon: BsLinkedin, href: 'https://www.linkedin.com/company/tech-silicon-village/posts/?feedView=all' },
     { title: 'Instagram', icon: BsInstagram, href: 'https://www.instagram.com/siliconvillagebr/' },
-    { title: 'WhatsApp', icon: BsWhatsapp, href: 'https://wa.me/5511943820623' },
+    { title: 'WhatsApp', icon: BsWhatsapp, href: 'https://wa.me/5511916329680' },
     { title: 'E-mail', icon: BsEnvelope, href: 'mailto:contato@siliconvillage.dev' },
   ],
   company: 'Silicon Village Innovation',

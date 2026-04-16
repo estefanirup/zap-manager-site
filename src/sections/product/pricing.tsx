@@ -162,7 +162,7 @@ export default function Pricing() {
               </p>
             </div>
 
-            <Link href="https://wa.me/5511943820623" target="_blank">
+            <Link href="https://wa.me/5511916329680" target="_blank">
               <Button>{t("addon.price")}</Button>
             </Link>
 

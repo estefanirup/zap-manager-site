@@ -1,102 +1,145 @@
 'use client'
 
 import Logo from "./logo"
-import Link from "next/link"
+import { Link, usePathname } from "@/i18n/navigation"
+import { useTranslations } from "next-intl"
 import { Button } from "./ui/button"
-import * as LucideIcons from "lucide-react";
-import { AnimatePresence } from 'motion/react'
+import * as LucideIcons from "lucide-react"
+import { AnimatePresence } from "motion/react"
 import * as motion from "motion/react-m"
 import { useState } from "react"
+import LocaleSwitcher from "./locale-switcher"
 
-const settings = {
-  navLinks: [
-    { name: 'início', href: '/' },
-    { name: 'solução', href: '#services' },
-    { name: 'clientes', href: '#clients' },
-    { name: 'cases', href: '#cases' },
-    { name: 'sobre', href: '/sobre' },
-    { name: 'contato', href: '#cta' },
-  ],
-  cta: {
-    content: 'agendar diagnóstico',
-    href: 'https://wa.me/5511943820623'
-  }
+interface NavLink {
+  key: string
+  href: string
 }
 
-export default function Navbar() {
+interface NavbarProps {
+  variant?: "home" | "product"
+}
+
+export default function Navbar({ variant = "home" }: NavbarProps) {
+  const t = useTranslations("nav")
+  const pathname = usePathname()
   const [isOpen, setIsOpen] = useState(false)
 
-  const toggleMenu = () => setIsOpen(!isOpen)
+  const isHome = pathname === "/"
 
-  const handleMobileLinkClick = (href: string) => {
-    toggleMenu()
-    if (href.startsWith('#')) {
-      const section = document.querySelector(href)
-      if (section) section.scrollIntoView({ behavior: 'smooth' })
+  const links: NavLink[] =
+    variant === "product"
+      ? [
+          { key: "home", href: "/" },
+          { key: "features", href: "#features" },
+          { key: "pricing", href: "#pricing" },
+          { key: "faq", href: "#faq" },
+          { key: "about", href: "/sobre" },
+        ]
+      : [
+          { key: "home", href: "/" },
+          { key: "services", href: "#services" },
+          { key: "clients", href: "#clients" },
+          { key: "cases", href: "#cases" },
+          { key: "about", href: "/sobre" },
+          { key: "contact", href: "#cta" },
+        ]
+
+  const toggleMenu = () => setIsOpen((v) => !v)
+
+  const resolveHref = (href: string) => {
+    if (href.startsWith("#")) {
+      return isHome ? href : `/${href}`
     }
+    return href
+  }
+
+  const renderLink = (link: NavLink, className: string, onClick?: () => void) => {
+    const href = resolveHref(link.href)
+
+    if (href.startsWith("#") || href.startsWith("/#")) {
+      return (
+        <a href={href} className={className} onClick={onClick}>
+          {t(link.key)}
+        </a>
+      )
+    }
+
+    return (
+      <Link href={href as any} className={className} onClick={onClick}>
+        {t(link.key)}
+      </Link>
+    )
   }
 
   return (
-    <nav className="w-full py-4 flex items-center justify-between px-4 xl:px-0 relative z-50">
-      <Link href='/' title="Silicon Village Innovation" id="Logo">
-        <Logo />
-      </Link>
+    <nav className="w-full py-4 px-4 relative z-50">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
+        
+        {/* LOGO (fixa, não encolhe) */}
+        <div className="flex-shrink-0">
+          <Link href="/">
+            <Logo />
+          </Link>
+        </div>
 
-      {/* Desktop menu */}
-      <div className="hidden md:flex items-center gap-5">
-        <ul className="flex gap-5 font-medium text-black select-none text-link">
-          {settings.navLinks.map(link => (
-            <li key={link.name}>
-              <a
-                href={link.href}
-                className="hover:opacity-80 transition-all capitalize"
-              >
-                {link.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <Link href={settings.cta.href} target="_blank" rel="noopener noreferrer">
-          <Button className="capitalize">{settings.cta.content}</Button>
-        </Link>
+        {/* DESKTOP */}
+        <div className="hidden md:flex items-center gap-4 flex-1 justify-end">
+          
+          {/* LINKS (limitados) */}
+          <ul className="flex gap-4 font-medium text-black max-w-[600px] w-full justify-center truncate">
+            {links.map((link) => (
+              <li key={link.key} className="whitespace-nowrap">
+                {renderLink(
+                  link,
+                  "hover:opacity-80 transition capitalize text-sm"
+                )}
+              </li>
+            ))}
+          </ul>
+
+          {/* AÇÕES (fixas) */}
+          <div className="flex items-center gap-3 flex-shrink-0">
+            <LocaleSwitcher />
+
+            <a href="https://wa.me/5511916329680" target="_blank">
+              <Button className="capitalize whitespace-nowrap">
+                {t("cta")}
+              </Button>
+            </a>
+          </div>
+        </div>
+
+        {/* MOBILE TOGGLE */}
+        <motion.div
+          whileTap={{ scale: 0.9 }}
+          className="md:hidden cursor-pointer"
+          onClick={toggleMenu}
+        >
+          {isOpen ? <LucideIcons.X /> : <LucideIcons.AlignJustify />}
+        </motion.div>
       </div>
 
-      {/* Mobile menu toggle */}
-      <motion.div
-        initial={{ scale: 1 }}
-        whileTap={{ scale: 0.8 }}
-        className="md:hidden cursor-pointer text-black"
-        onClick={toggleMenu}
-      >
-        {!isOpen ? <LucideIcons.AlignJustify width={20} height={20} /> : <LucideIcons.X width={20} height={20} />}
-      </motion.div>
-
-      {/* Mobile menu */}
+      {/* MOBILE */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
+            animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.4 }}
-            className="fixed top-16 left-0 w-full z-50 bg-white shadow-md overflow-y-auto"
+            className="fixed top-16 left-0 w-full bg-white shadow-md z-50"
           >
-            <div className="flex flex-col p-6 space-y-6">
-              <ul className="flex flex-col space-y-2 font-medium text-black text-base select-none">
-                {settings.navLinks.map(link => (
-                  <li key={link.name}>
-                    <button
-                      onClick={() => handleMobileLinkClick(link.href)}
-                      className="block py-2 capitalize w-full text-left"
-                    >
-                      {link.name}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-              <Link href={settings.cta.href} target="_blank" rel="noopener noreferrer" onClick={toggleMenu}>
-                <Button className="w-full capitalize">{settings.cta.content}</Button>
-              </Link>
+            <div className="p-6 flex flex-col gap-4">
+              {links.map((link) => (
+                <div key={link.key}>
+                  {renderLink(
+                    link,
+                    "block py-2 capitalize",
+                    toggleMenu
+                  )}
+                </div>
+              ))}
+
+              <LocaleSwitcher />
             </div>
           </motion.div>
         )}

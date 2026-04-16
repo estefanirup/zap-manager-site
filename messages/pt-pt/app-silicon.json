@@ -1,0 +1,63 @@
+{
+  "back": "Voltar aos Casos de Sucesso",
+  "date": "25 de fevereiro de 2025",
+  "title": "Sistema completo de gestão de colaboradores",
+
+  "subtitle": "Uma plataforma desenvolvida internamente pela Silicon Village para simplificar a administração de RH, unificando registo de horas, controlo de ponto, recibos de vencimento, envio de faturas e comunicação interna num único app.",
+
+  "context": {
+    "p1": "Na Silicon Village, acreditamos que a tecnologia deve simplificar a vida, não complicá-la. Com uma equipa distribuída entre colaboradores CLT, PJ e estagiários, gerir horas, documentos e despesas tornava-se cada vez mais complexo. Foi com essa necessidade real que nasceu o App Silicon.",
+
+    "highlight": "O objetivo era claro: capacitar a equipa com métricas precisas e uma utilização simplificada, transformando tarefas burocráticas em experiências rápidas e eficientes.",
+
+    "p2_title": "Gestão financeira simplificada",
+    "p2": "Imaginámos um espaço onde o colaborador pudesse gerir as suas atividades e despesas sem sair da app. Colaboradores PJ e CLT têm a liberdade de registar horas para diferentes clientes, detalhando como foi o dia, conquistas e impedimentos, tudo com alguns cliques.",
+
+    "p3_title": "Facilidade na palma da mão",
+    "p3": "Além de gerir atividades, o Silicon permite o envio rápido de faturas de despesas. Colaboradores PJ têm um campo dedicado ao envio de faturas, tornando o processo direto e sem atrito. Pedidos de reembolso podem ser feitos, aprovados ou rejeitados diretamente na app, com possibilidade de refazer solicitações.",
+
+    "p4_title": "Três perfis, uma plataforma",
+    "p4": "A app adapta-se ao tipo de contrato do colaborador, entregando funcionalidades específicas para cada perfil:"
+  },
+
+  "profiles": [
+    {
+      "name": "CLT",
+      "description": "Controlo de ponto, recibos de vencimento, relatórios diários e reembolsos."
+    },
+    {
+      "name": "PJ",
+      "description": "Registo de horas, envio de faturas e relatórios por projeto."
+    },
+    {
+      "name": "Estagiário",
+      "description": "Interface simplificada adaptada ao perfil de aprendizagem."
+    }
+  ],
+
+  "featuresTitle": "Funcionalidades do sistema",
+  "featuresDescription": "Tudo o que a equipa precisa para gestão de horas, documentos e desempenho num só lugar.",
+
+  "features": [
+    { "title": "Registo de Horas", "description": "Colaboradores registam horas por projeto..." },
+    { "title": "Recibos Digitais", "description": "Geração automática de recibos de vencimento..." },
+    { "title": "Controlo de Ponto", "description": "Registo de entrada e saída simplificado..." },
+    { "title": "Envio de Faturas", "description": "PJ envia faturas diretamente pela app..." },
+    { "title": "Pedidos de Reembolso", "description": "Fluxo completo de aprovação e rejeição..." },
+    { "title": "Avaliação de Desempenho", "description": "Avaliações periódicas automatizadas..." },
+    { "title": "Relatórios Analíticos", "description": "Dados sobre custos e produtividade..." },
+    { "title": "Comunicação Interna", "description": "Canal direto com a equipa de RH..." }
+  ],
+
+  "mockupsTitle": "A app em ação",
+  "mockupsDescription": "Interface pensada para ser simples e direta, permitindo que qualquer colaborador a utilize sem formação.",
+
+  "techTitle": "Tecnologias utilizadas",
+  "techDescription": "App mobile em Flutter, backoffice em Angular e infraestrutura completa no Firebase com Cloud Functions.",
+
+  "ctaTitle": "Precisa de uma solução à medida para a sua equipa?",
+  "ctaDescription": "Desenvolvemos sistemas internos que simplificam a operação e capacitam a sua equipa com dados e agilidade.",
+  "ctaButton": "Falar com especialista",
+
+  "navPrev": "← Caso anterior: Ultimate Drift"
+}

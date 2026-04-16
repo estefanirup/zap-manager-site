@@ -1,0 +1,232 @@
+{
+  "hero": {
+    "headline": [
+      "O seu WhatsApp não foi feito para gerir um negócio.",
+      "A nossa plataforma foi."
+    ],
+    "subheadline": "Centralize WhatsApp, Instagram e e-mail num painel inteligente com IA, métricas em tempo real e automação.",
+    "mainCTA": "Agendar diagnóstico gratuito",
+    "secondaryCTA": "Ver demonstração",
+    "channelsLabel": "Canais e integrações suportados"
+  },
+
+  "features1": {
+    "badge": "porquê mudar agora",
+    "title": "Problemas que a sua empresa enfrenta hoje",
+    "description": "Se se identifica com algum destes cenários, a sua operação de atendimento está a perder dinheiro.",
+
+    "card1": {
+      "title": "Não sabe o que acontece no seu atendimento",
+      "content": "Qual o tempo médio de resposta da sua equipa? Quantas conversas ficaram sem resposta esta semana? Qual o colaborador com melhor desempenho? Sem uma plataforma estruturada, estas respostas simplesmente não existem."
+    },
+    "card2": {
+      "title": "Crescer significa gastar mais",
+      "content": "Quando o volume de mensagens aumenta, a única solução é contratar mais pessoas. Sem saber se os colaboradores atuais estão a ser produtivos, a operação cresce em custo, mas não em eficiência."
+    },
+    "card3": {
+      "title": "A sua equipa responde às mesmas perguntas o dia inteiro",
+      "content": "Horário de funcionamento, preços, estado de encomendas, informações básicas sobre produtos. São horas por dia gastas com respostas repetitivas que poderiam ser automatizadas."
+    },
+    "card4": {
+      "title": "Mensagens perdidas são vendas perdidas",
+      "content": "Leads que chegam pelo Instagram e ficam sem resposta. Clientes que enviam mensagem no WhatsApp e só recebem resposta no dia seguinte. Cada conversa ignorada é uma oportunidade perdida para a concorrência."
+    }
+  },
+
+  "features2": {
+    "badge": "a solução",
+    "title": "Visibilidade total, controlo real",
+    "description": "Um painel único onde acompanha cada conversa, mede a performance da equipa e toma decisões com base em dados, não em suposições.",
+
+    "card1": {
+      "title": "Métricas que mostram a realidade",
+      "content": "Acompanhe a performance da sua operação em tempo real. Sem suposições, sem depender de relatos manuais.",
+      "metrics": {
+        "0": {
+          "title": "Tempo de resposta",
+          "description": "Saiba em segundos quanto a sua equipa demora a responder a cada cliente"
+        },
+        "1": {
+          "title": "Volume por canal",
+          "description": "Veja quais canais geram mais procura e onde deve concentrar esforços"
+        },
+        "2": {
+          "title": "Satisfação (CSAT)",
+          "description": "Inquérito automático após cada atendimento resolvido"
+        },
+        "3": {
+          "title": "Desempenho por agente",
+          "description": "Compare produtividade, velocidade e qualidade entre colaboradores"
+        }
+      }
+    },
+
+    "card2": {
+      "title": "Automação que trabalha por si",
+      "content": "Fluxos inteligentes no n8n que distribuem conversas, etiquetam atendimentos, enviam respostas automáticas e alertam gestores quando os tempos de resposta ultrapassam o limite. A sua equipa foca-se no que importa.",
+      "automations": {
+        "0": "Conversa criada no Instagram → atribuir à equipa de vendas",
+        "1": "Mensagem contém \"cancelar\" → encaminhar para retenção",
+        "2": "Sem resposta há 5 min → alerta ao supervisor",
+        "3": "Conversa resolvida → enviar inquérito de satisfação"
+      }
+    }
+  },
+
+  "features3": {
+    "badge": "inteligência artificial",
+    "title": "IA que atende, aprende e evolui",
+    "description": "Agentes de inteligência artificial criados à medida para o seu negócio. Respondem a clientes, apoiam a sua equipa e evoluem conforme a base de conhecimento cresce.",
+    "cards": {
+      "assistant": {
+        "title": "Assistente 24h",
+        "content": "Um agente de IA que responde automaticamente a clientes com base na documentação e histórico da empresa. Quando não consegue resolver, transfere para um humano com o contexto completo da conversa."
+      },
+      "copilot": {
+        "title": "Assistente inteligente para a sua equipa",
+        "content": "Enquanto o agente atende, a IA trabalha em paralelo. Sugere respostas com base no contexto, resume conversas longas e qualifica leads antes da intervenção humana."
+      },
+      "translation": {
+        "title": "Tradução em tempo real",
+        "content": "Atenda clientes em vários idiomas sem precisar de uma equipa multilíngue. A IA traduz mensagens automaticamente nos dois sentidos da conversa."
+      }
+    }
+  },
+
+  "features4": {
+    "badge": "a sua equipa no controlo",
+    "title": "Gestão real do atendimento",
+    "description": "Distribua conversas entre equipas, acompanhe o desempenho individual de cada agente e garanta que nenhum cliente fica sem resposta ou com atrasos.",
+
+    "card1": {
+      "title": "Equipas, canais e agentes num só painel",
+      "content": "Crie equipas separadas para vendas, suporte e pós-venda. Atribua agentes a canais específicos, defina limites de conversas simultâneas e acompanhe em tempo real quem está online, disponível ou sobrecarregado. Visibilidade operacional completa para gestores.",
+      "cta": "Agendar diagnóstico gratuito",
+      "labels": {
+        "0": "Vendas",
+        "1": "Suporte",
+        "2": "Pós-venda",
+        "3": "Financeiro",
+        "4": "Retenção",
+        "5": "Técnico",
+        "6": "Triagem"
+      }
+    },
+
+    "card2": {
+      "title": "Alertas de tempo de resposta",
+      "content": "Defina metas para tempo de primeira resposta, acompanhamento e resolução. Fluxos automatizados no n8n monitorizam continuamente estes prazos e alertam gestores antes de qualquer SLA ser ultrapassado."
+    },
+
+    "card3": {
+      "title": "Relatórios que geram decisão",
+      "content": "Seis tipos de relatórios prontos: por conversa, agente, equipa, canal, etiqueta e CSAT. Todos exportáveis para análise offline ou apresentações executivas."
+    }
+  },
+
+  "pricing": {
+    "title": "Planos",
+    "description": "Todos os planos incluem a plataforma completa, sem restrições de funcionalidades. O que muda é o nível de automação, IA e acompanhamento.",
+
+    "plan_1": {
+      "planName": "Essencial",
+      "price": 497,
+      "currency": "€",
+      "period": "/mês",
+      "description": "Para empresas que estão a profissionalizar o atendimento digital.",
+      "cta": "Falar com consultor",
+      "href": "https://wa.me/5511916329680",
+      "features": [
+        "Todos os canais (WhatsApp, Instagram, Facebook, TikTok, Telegram, e-mail, SMS)",
+        "Inbox unificada com equipas e auto-atribuição",
+        "Relatórios por agente, canal, equipa e CSAT",
+        "Base de conhecimento",
+        "Perfis de clientes com histórico completo",
+        "Respostas rápidas, etiquetas e notas internas",
+        "Horário de atendimento configurável",
+        "Hospedagem em VPS dedicado",
+        "Formação da equipa (2h)"
+      ]
+    },
+
+    "plan_2": {
+      "planName": "Profissional",
+      "price": 897,
+      "currency": "€",
+      "period": "/mês",
+      "description": "Para operações que precisam de automação inteligente e integração com outros sistemas.",
+      "cta": "Falar com consultor",
+      "href": "https://wa.me/5511916329680",
+      "features": [
+        "Tudo do plano Essencial",
+        "Fluxos de automação personalizados (n8n)",
+        "Distribuição inteligente de conversas",
+        "Integração com CRM, ERP e sistemas internos",
+        "Campanhas automatizadas de follow-up",
+        "Alertas de tempo de resposta para gestores",
+        "Governança com reuniões quinzenais",
+        "Suporte técnico com 2h mensais incluídas"
+      ]
+    },
+
+    "plan_3": {
+      "planName": "Enterprise",
+      "priceLabel": "Sob consulta",
+      "description": "Para operações que exigem IA avançada, integrações complexas e acompanhamento dedicado.",
+      "cta": "Solicitar proposta",
+      "href": "https://wa.me/5511916329680",
+      "features": [
+        "Tudo do plano Profissional",
+        "Agentes de IA para atendimento automatizado",
+        "Qualificação de leads com IA",
+        "Resumo e tradução automática de conversas",
+        "Integrações ilimitadas via n8n",
+        "Customização da plataforma à medida",
+        "Account manager dedicado",
+        "Suporte prioritário"
+      ]
+    },
+
+    "addon": {
+      "title": "Agentes de IA",
+      "price": "a partir de € 550",
+      "description": "por agente (implementação única). Inclui modelação do fluxo no n8n, configuração do prompt, treino com a base do cliente e testes. Custo mensal variável conforme consumo de API."
+    }
+  },
+
+  "faq": {
+    "title": "Dúvidas frequentes",
+    "items": {
+      "0": {
+        "question": "Isto substitui a minha equipa de atendimento?",
+        "answer": "Não. A plataforma trabalha em conjunto com a sua equipa, automatizando respostas repetitivas e organizando o fluxo. Os seus colaboradores focam-se em fechar vendas e resolver casos complexos."
+      },
+      "1": {
+        "question": "Funciona com WhatsApp e Instagram?",
+        "answer": "Sim. Pode ligar WhatsApp, Instagram, Facebook, e-mail e outros canais num único painel."
+      },
+      "2": {
+        "question": "Preciso de conhecimento técnico?",
+        "answer": "Não. Nós tratamos da implementação, configuração e formação da sua equipa."
+      },
+      "3": {
+        "question": "Como funciona a inteligência artificial?",
+        "answer": "A IA responde automaticamente a perguntas frequentes, qualifica leads e encaminha para um humano quando necessário."
+      },
+      "4": {
+        "question": "Os meus dados estão seguros?",
+        "answer": "Sim. Pode ser implementado em servidor dedicado (VPS), garantindo controlo total dos dados."
+      },
+      "5": {
+        "question": "Quanto tempo demora a começar?",
+        "answer": "A configuração inicial pode ser feita rapidamente, seguida de ajustes conforme a operação evolui."
+      }
+    }
+  },
+
+  "cta": {
+    "title": "Organize o seu atendimento e pare de perder vendas",
+    "description": "Descubra como centralizar os seus canais...",
+    "button": "Agendar diagnóstico gratuito"
+  }
+}

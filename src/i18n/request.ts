@@ -8,24 +8,35 @@ export default getRequestConfig(async ({ requestLocale }) => {
     locale = routing.defaultLocale
   }
 
-  const commonMessages = (await import(`../../messages/${locale}.json`)).default
+  // COMMON (arquivo raiz: pt.json, pt-pt.json, etc)
+  const loadCommon = async () => {
+    try {
+      return (await import(`../../messages/${locale}.json`)).default
+    } catch {
+      return (await import(`../../messages/pt.json`)).default
+    }
+  }
 
-  const casesMessages = (await import(`../../messages/${locale}/casos-de-sucesso.json`)).default
+  // PÁGINAS (dentro de /locale/)
+  const loadScoped = async (file: string) => {
+    try {
+      return (await import(`../../messages/${locale}/${file}.json`)).default
+    } catch {
+      try {
+        return (await import(`../../messages/pt/${file}.json`)).default
+      } catch {
+        return {}
+      }
+    }
+  }
 
-  let productMessages = {}
-  try {
-    productMessages = (await import(`../../messages/${locale}/product.json`)).default
-  } catch {}
+  const commonMessages = await loadCommon()
+  const casesMessages = await loadScoped('casos-de-sucesso')
 
-  let ultimateDriftMessages = {}
-  try {
-    ultimateDriftMessages = (await import(`../../messages/${locale}/ultimate-drift.json`)).default
-  } catch {}
-
-  let appSiliconMessages = {}
-  try {
-    appSiliconMessages = (await import(`../../messages/${locale}/app-silicon.json`)).default
-  } catch {}
+  const productMessages = await loadScoped('product')
+  const ultimateDriftMessages = await loadScoped('ultimate-drift')
+  const appSiliconMessages = await loadScoped('app-silicon')
+  const sobreMessages = await loadScoped('sobre')
 
   return {
     locale,
@@ -38,10 +49,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
       },
 
       product: productMessages,
-
       'ultimate-drift': ultimateDriftMessages,
-
-      'app-silicon': appSiliconMessages
+      'app-silicon': appSiliconMessages,
+      sobre: sobreMessages
     }
   }
 })

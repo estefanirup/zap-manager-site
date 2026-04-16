@@ -1,0 +1,64 @@
+{
+  "title": "Our Story",
+  "history": {
+    "p1": "Silicon Village began to take shape organically and collaboratively in 2016. After moving to São Paulo, founder Jeferson Guardezi moved into a charming residential village composed of eight houses. As he formed teams and brought new talent to work on technology projects, these professionals ended up moving there, occupying about six of the village's houses.",
+    "p2": "This environment of proximity, innovation and collaboration led the place to be affectionately nicknamed \"Vila do Silício\" or \"Silicon Village,\" a name that inspired and officially baptized the company at its founding in 2019.",
+    "p3": "Since the beginning of its operations, Silicon Village has shown accelerated growth, managing to double in size year after year. The great engine of this success is our strong bet on human potential, seeking promising talents at institutions of excellence like UTFPR.",
+    "p4": "We've consolidated a culture of empowerment, where we believe that the hunger to learn and proactivity are the greatest differentiators for building exceptional solutions.",
+    "p5": "Our greatest achievements go beyond numbers, reflecting directly in the technical excellence and continuous development of our team. An important milestone in our trajectory was the recognition of our delivery quality with the AWS Partner Select badge.",
+    "p6": "Additionally, we invest in the academic evolution of our talents, funding qualifications such as MBAs. We deeply celebrate every success story, seeing professionals who built their foundations with us achieve brilliant careers and recognition."
+  },
+  "team": "Our Team",
+  "mission": {
+    "title": "Mission",
+    "content": "Transform human potential and technological uncertainty into real value, acting as the bridge that connects engineering excellence to complex business challenges, ensuring the continuous growth of clients and employees."
+  },
+  "vision": {
+    "title": "Vision",
+    "content": "To be a hub of engineering and innovation where extraordinary people build extraordinary technology. To become an international reference in digital solutions and Artificial Intelligence, combining technical excellence, human development and real business impact."
+  },
+  "values": {
+    "title": "Values",
+    "items": {
+      "excellence": {
+        "title": "NON-NEGOTIABLE TECHNICAL EXCELLENCE",
+        "description": "Leaders at Silicon don't accept \"good enough\" deliveries. We understand that speed without engineering is just accelerated chaos. We combine robust university theory with market practice to ensure that code, architecture and solutions are structurally sound. We don't take shortcuts that compromise quality; we review work with respect and ensure that everything that leaves the company maintains our standard of expertise."
+      },
+      "leadership": {
+        "title": "TRANSFORM POTENTIAL INTO LEADERSHIP",
+        "description": "We are obsessed with people's growth. We act as the official bridge between raw talent (university) and the high-performance market. Leaders here don't just manage; they teach, mentor and create an environment where interns evolve years in months. Success is measured when former employees say this is where they \"really learned and grew\". We invest in people, we don't discard talent and we celebrate every individual victory."
+      },
+      "simplicity": {
+        "title": "RESOLUTE SIMPLICITY",
+        "description": "Complexity is the tax of intellectual laziness. We seek \"intelligent simplicity\": simplifying what can be simple and leaving complex only what is inevitable. Our leaders eliminate unnecessary bureaucracy, like solving in one email what would take weeks of processes, and focus on unlocking value. We transform complex client problems into simple, fast and functional technological solutions."
+      },
+      "transparency": {
+        "title": "RADICAL TRANSPARENCY (NO DRAMA)",
+        "description": "Problems only become monsters when they are hidden. At Silicon, integrity is the value that sustains all others. We communicate bad news early, objectively and without frills, to correct quickly. Leaders act with ethics and truth, even when uncomfortable, ensuring that trust is the basis of our speed. There is no room for hidden agendas or internal politics; ethical coherence is absolute."
+      },
+      "ego": {
+        "title": "LOW EGO, HIGH IMPACT",
+        "description": "Protagonism is collective. It doesn't matter who solved it, what matters is that the problem was solved. We reject the \"star\" behavior that places individual interest above the team. Leaders operate with humility, knowing that brilliant people without collaboration destroy culture. Autonomy is given with responsibility, and group results always prevail over individual vanity."
+      },
+      "frugality": {
+        "title": "FRUGALITY (DO MORE WITH LESS)",
+        "description": "Leaders accomplish more with fewer resources. We understand that constraints are not blockers, but fuel for ingenuity, self-sufficiency and invention. There is no merit in increasing the budget, team size or fixed expense if efficiency does not follow. At Silicon, we fight waste by eliminating unnecessary bureaucracies. We seek automation to reduce operational costs and we value the intelligence of solving in two days, with the right tool, what brute force did not solve in a month."
+      },
+      "knowledge": {
+        "title": "KNOWLEDGE IS LIKE A GLASS OF WATER",
+        "description": "At Silicon, knowledge is like a glass of water: it is denied to no one. We believe that knowledge sharing is what makes us an acceleration ramp for talent. We value the proactivity of those who seek to learn and the courage of those who ask for help; here, curiosity is a mandatory work tool. Leaders teach and mentor constantly, ensuring that the flow of information is free and that no one navigates blindly."
+      }
+    }
+  },
+  "international": {
+    "title": "International Presence",
+    "p1": "The talent we cultivate knows no borders, and our capacity for global expansion is already a solid and implemented reality. Throughout our trajectory, we crossed Brazil's borders and formally structured our international presence with the establishment of companies in the United States and Portugal.",
+    "p2": "This international infrastructure we've built not only attests to the global quality of our software engineering, but also directly connects our talents to a worldwide innovation ecosystem.",
+    "locations": {
+      "pr": { "city": "Medianeira, PR", "role": "HQ & Engineering" },
+      "sp": { "city": "São Paulo, SP", "role": "Commercial Operations" },
+      "us": { "city": "Miami, USA", "role": "International Operations" },
+      "pt": { "city": "Portugal", "role": "European Presence" }
+    }
+  }
+}

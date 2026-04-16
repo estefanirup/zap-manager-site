@@ -48,7 +48,7 @@ export default function Hero() {
         </svg>
       </div>
 
-      <Navbar />
+      <Navbar variant="product" />
 
       <section className="flex flex-col gap-8 lg:gap-11 items-center text-center py-10 md:py-16">
 
